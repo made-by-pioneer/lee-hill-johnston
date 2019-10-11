@@ -1,0 +1,164 @@
+baseURL = "https://gz-default.netlify.com/"
+languageCode = "en-us"
+theme = "site-theme"
+title = "Example"
+enableRobotsTXT = true
+
+[params.meta]
+description = "This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission."
+
+[[menu.desktop]]
+    identifier = "ourCompany"
+    name = "Our Company"
+    url = "/our-company/"
+    weight = 1
+[[menu.desktop]]
+    identifier = "ourProducts"
+    name = "Our Products"
+    url = "/our-products/"
+    weight = 2
+[[menu.desktop]]
+    identifier = "faqs"
+    name = "FAQs"
+    url = "/faq/"
+    weight = 3
+[[menu.desktop]]
+    identifier = "contactUs"
+    name = "Contact Us"
+    url = "/contact-us/"
+    weight = 4
+[[menu.mobile]]
+    identifier = "ourCompany"
+    name = "Our Company"
+    url = "/our-company/"
+    weight = 1
+    [[menu.mobile]]
+        identifier = "history"
+        name = "History"
+        url = "/history/"
+        weight = 1
+        parent = "ourCompany"
+    [[menu.mobile]]
+        identifier = "team"
+        name = "Team"
+        url = "/team/"
+        weight = 2
+        parent = "ourCompany"
+    [[menu.mobile]]
+        identifier = "reputation"
+        name = "Reputation"
+        url = "/reputation/"
+        weight = 3
+        parent = "ourCompany"
+[[menu.mobile]]
+    identifier = "ourProducts"
+    name = "Products"
+    url = "/our-products/"
+    weight = 2
+    [[menu.mobile]]
+        identifier = "personal"
+        name = "Personal"
+        url = "/personal/"
+        weight = 1
+        parent = "ourProducts"
+    [[menu.mobile]]
+        identifier = "business"
+        name = "Business"
+        url = "/business/"
+        weight = 2
+        parent = "ourProducts"
+    [[menu.mobile]]
+        identifier = "lifeandhealth"
+        name = "Life / Health"
+        url = "/life-health/"
+        weight = 3
+        parent = "ourProducts"
+[[menu.mobile]]
+    identifier = "faqs"
+    name = "FAQs"
+    url = "/faq/"
+    weight = 3
+[[menu.mobile]]
+    identifier = "contactUs"
+    name = "Contact Us"
+    url = "/contact-us/"
+    weight = 4
+[[menu.mobile]]
+    identifier = "getQuote"
+    name = "Get a Quote"
+    url = "/quote/"
+    weight = 5
+[params.contact_numbers]
+    Fax = "555.555.5555"
+    Phone = "555.555.5555"
+[params.Logos]
+    dark_logo = "/pageimg/example-logo.png"
+    logo = "/pageimg/logo.png"
+    footer_logo = "/pageimg/footer-logo.png"
+    mobile_logo = "/pageimg/logo.png"
+[params.utility_images]
+    thank_you_background = "/pageimg/thank-you-contact.jpg"
+[params.address]
+    city = "Statesboro"
+    state = "GA"
+    street = "P.O. Box 134"
+    zip = 30459
+[params.email]
+    email = "example@example.com"
+[params.tracking]
+    google_analytics = ""
+    cloudinaryUrl = ""
+[params.social_links]
+    facebook = ""
+    insta = ""
+    linkedin = ""
+    pinterest = ""
+[params.publishing_settings]
+    site_in_production = false
+
+[mediaTypes]
+  [mediaTypes."text/noExt"]
+    suffixes = ""
+
+[sitemap]
+    filename = "sitepages.xml"
+
+[outputFormats]
+    [outputFormats.sitemapindex]
+        baseName = "sitemapindex"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.sitepages]
+        baseName = "sitepages"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.siteposts]
+        baseName = "siteposts"
+        isPlainText = false
+        mediaType = "application/xml"
+        path = "/"
+    [outputFormats.redirects]
+        baseName = "_redirects"
+        isPlainText = true
+        mediaType = "text/noExt"
+        path = "/"
+    [outputFormats.Algolia]
+        baseName = "algolia"
+        isPlainText = true
+        mediaType = "application/json"
+        notAlternative = true
+
+[outputs]
+  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "Algolia"]
+
+[params.algolia]
+    appId = ""
+    search_key = ""
+    index_name = ""
+
+[params.extra_tools]
+    algolia_search = false
+    font_awesome = true
+    floating_header = false

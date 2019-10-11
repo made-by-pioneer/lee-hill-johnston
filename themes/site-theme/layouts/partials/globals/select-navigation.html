@@ -1,0 +1,13 @@
+<div class="flex flex-wrap bg-cover lg:bg-contain bg-center bg-no-repeat py-12 lg:py-32 select-navigation">
+    <div class="w-auto mx-auto">
+        <select id="" class="flex flex-wrap w-80 h-12 font-canela text-3xl text-color-00594D" onchange="location = this.value;">
+            <option value="">{{ .Title }}</option>
+            {{ $pageTitle := .Title }}
+            {{ range (where .Site.Pages "Type" "faq") }}
+            {{ if not (eq .Title $pageTitle ) }}
+            <option value="/">{{ .Title }}</option>
+            {{ else }}{{ end }}
+            {{ end }}
+        </select>
+    </div>
+</div>

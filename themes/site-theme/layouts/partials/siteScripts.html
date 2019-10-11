@@ -1,0 +1,61 @@
+{{ $script := .Site.Data.webpack_assets.app }}
+{{ with $script.js }}
+  <script defer src="{{ absURL (printf "%s%s" "/dist/" .) }}"></script>
+{{ end }}
+
+{{ if eq .Site.Params.extra_tools.floating_header true }}
+<script>
+let scrollpos = window.scrollY
+  const header = document.querySelector(".header-container")
+  const headerHeightFix = document.querySelector("#headerFloatingHeightFix")
+  const headerHeight = header.offsetHeight
+  const addHeaderFloat = () => header.classList.add("fixed", "z-50", "top-0", "w-full", "bg-white")
+  const addHeaderHeightFix = () => headerHeightFix.classList.add("h-24")
+  const removeHeaderFloat = () => header.classList.remove("fixed")
+  const removeHeaderHeightFix = () => headerHeightFix.classList.remove("h-24")
+  window.addEventListener('scroll', function() { 
+    scrollpos = window.scrollY;
+    if (scrollpos >= headerHeight + 200) { addHeaderFloat(), addHeaderHeightFix() }
+    else { removeHeaderFloat(), removeHeaderHeightFix() }
+})
+</script>
+{{ else }}
+{{ end }}
+
+<script>
+function addClass(el, klass) {
+  el.classList.add(klass);
+}
+
+function removeClass(el, klass) {
+  el.classList.remove(klass);
+}
+
+const accordionItems = document.querySelectorAll('.accordion-item');
+const accordionContentPanes = document.querySelectorAll('.accordion-content');
+
+// Show first by default
+accordionItems[0].querySelector('.accordion-content').classList.remove('hidden');
+
+// Hide each besides the targeted accordion on click
+accordionItems.forEach(function(accordion) {
+  // Clicked accordeions clickable target
+  const accordionTitleRow = accordion.firstElementChild;
+
+  accordionTitleRow.addEventListener('click', toggleAccordion);
+  // console.log(accordion.firstElementChild);
+});
+
+function toggleAccordion(e) {
+  accordionContentPanes.forEach(function(content) {
+    console.log(content.parentElement);
+    if (content.previousElementSibling === e.target) {
+      removeClass(content, 'hidden');
+      addClass(content.parentElement, 'active');
+    } else {
+      removeClass(content.parentElement, 'active');
+      addClass(content, 'hidden');
+    }
+  });
+}
+</script>

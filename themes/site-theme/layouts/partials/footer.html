@@ -1,0 +1,118 @@
+<style>
+  footer {
+    background-color: #E4E2DD;
+  }
+</style>
+
+<footer class="flex flex-wrap items-start pt-16 pb-3 px-8 lg:px-32">
+  <div class="w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0">
+    <img class="w-40" src="{{ .Site.Params.logos.footer_logo }}">
+  </div>
+  <div class="flex flex-wrap w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0 sm:px-5">
+    <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Site Navigation</h6>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Home
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Our Company
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Our Team
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Our Reputation
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      FAQs
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Contact Us
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Get a Quote
+    </a>
+  </div>
+  <div class="flex flex-wrap w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0 sm:px-5">
+    <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance</h6>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Homeowners
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Auto
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Umbrella
+    </a>
+  </div>
+  <div class="flex flex-wrap w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0 sm:px-5">
+    <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Business Insurance</h6>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Risk Management
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Property
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Liability
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Umbrella
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Commercial Auto
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Workers Comp
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Equipment/Inland Marine
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Builder's Risk
+    </a>
+  </div>
+  <div class="flex flex-wrap w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0 sm:px-5">
+    <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Life/Health Insurance</h6>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Life Insurance
+    </a>
+    <a href="" class="w-full font-calibre text-base pb-1">
+      Group Benefits
+    </a>
+    <img class="w-16 pt-12" src="/pageimg/independent-insurance-agency.png">
+  </div>
+  <div class="flex flex-wrap items-center w-full pt-16">
+      <div class="w-full lg:w-1/3 text-center pb-8 lg:pb-0 opacity-50">
+        <p class="font-calibre text-xs text-color-333333">Copyright &copy; {{ dateFormat "2006" now }} {{ .Site.Title }} | All Rights Reserved.</p>
+      </div>
+      <div class="flex flex-wrap w-full lg:w-1/3 mx-auto text-center pb-8 lg:pb-0">
+        <div class="flex flex-wrap w-full text-center h-24">
+            <script>
+                function hover(element) {
+            element.setAttribute('src', '/pageimg/MadebyPioneer.Red.svg');
+            }
+            
+            function unhover(element) {
+            element.setAttribute('src', '/pageimg/PD.Badge.DarkBlue.svg');
+            }
+            </script>
+            <a class="flex flex-wrap w-full" target="_blank" href="http://madebypioneer.com">
+            <img class="flex flex-wrap mx-auto" src="/pageimg/PD.Badge.DarkBlue.svg" width="60px" height="30px" onmouseover="hover(this);" onmouseout="unhover(this);">
+            </a>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/3 text-center pb-8 lg:pb-0 opacity-50">
+        <p class="font-calibre text-xs text-color-333333">Follow us on <a href="/"><i class="text-sm fab fa-facebook-square"></i> Facebook</a> and <a href="/"><i class="text-sm fab fa-instagram"></i> Instagram</a></p>
+      </div>
+    </div>
+</footer>
+
+{{ if eq .Site.Params.extra_tools.elevatorJS true }}
+
+<div id="go-to-top-button">
+  <div class="elevator-button hidegotoTop">
+      <i class="fas fa-arrow-circle-up"></i>
+  </div>
+</div>
+
+{{ else }}{{ end }}
