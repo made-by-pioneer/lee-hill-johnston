@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Faqs on Example</title>
+    <link>https://gz-default.netlify.com/faqs/</link>
+    <description>Recent content in Faqs on Example</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://gz-default.netlify.com/faqs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Builder&#39;s Risk</title>
+      <link>https://gz-default.netlify.com/faqs/builders-risk/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://gz-default.netlify.com/faqs/builders-risk/</guid>
+      <description>Builders Risk Insurance covers a building and typically all materials during construction. Protection can be extended for the work of individual contractors, architects, and engineers. Optional coverage can often be added for costs not directly related to construction such as marketing, loss of income, and delayed completion.</description>
+    </item>
+    
+  </channel>
+</rss>
