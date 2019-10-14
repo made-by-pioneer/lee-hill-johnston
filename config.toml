@@ -1,16 +1,16 @@
 baseURL = "https://lee-hill-johnston.netlify.com/"
 languageCode = "en-us"
 theme = "site-theme"
-title = "Example"
+title = "Lee, Hill and Johnston Insurors"
 enableRobotsTXT = true
 
 [params.meta]
-description = "This domain is established to be used for illustrative examples in documents. You may use this domain in examples without prior coordination or asking for permission."
+description = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
 
 [[menu.desktop]]
     identifier = "ourCompany"
     name = "Our Company"
-    url = "/our-company/"
+    url = "/about-the-company/"
     weight = 1
 [[menu.desktop]]
     identifier = "ourProducts"
@@ -30,7 +30,7 @@ description = "This domain is established to be used for illustrative examples i
 [[menu.mobile]]
     identifier = "ourCompany"
     name = "Our Company"
-    url = "/our-company/"
+    url = "/about-the-company/"
     weight = 1
     [[menu.mobile]]
         identifier = "history"
@@ -41,13 +41,13 @@ description = "This domain is established to be used for illustrative examples i
     [[menu.mobile]]
         identifier = "team"
         name = "Team"
-        url = "/our-team/"
+        url = "/team/"
         weight = 2
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "reputation"
         name = "Reputation"
-        url = "/our-reputation/"
+        url = "/reputation/"
         weight = 3
         parent = "ourCompany"
 [[menu.mobile]]
@@ -58,25 +58,25 @@ description = "This domain is established to be used for illustrative examples i
     [[menu.mobile]]
         identifier = "personal"
         name = "Personal"
-        url = "/personal/"
+        url = "/faqs/personal/"
         weight = 1
         parent = "ourProducts"
     [[menu.mobile]]
         identifier = "business"
         name = "Business"
-        url = "/business/"
+        url = "/faqs/business/"
         weight = 2
         parent = "ourProducts"
     [[menu.mobile]]
         identifier = "lifeandhealth"
         name = "Life / Health"
-        url = "/life-health/"
+        url = "/faqs/life-health/"
         weight = 3
         parent = "ourProducts"
 [[menu.mobile]]
     identifier = "faqs"
     name = "FAQs"
-    url = "/faq/"
+    url = "/faqs/"
     weight = 3
 [[menu.mobile]]
     identifier = "contactUs"

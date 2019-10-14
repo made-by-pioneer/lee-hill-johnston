@@ -1,23 +1,132 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Faqs on Example</title>
-    <link>https://gz-default.netlify.com/faqs/</link>
-    <description>Recent content in Faqs on Example</description>
+    <title>FAQs on Lee, Hill and Johnston Insurors</title>
+    <link>https://lee-hill-johnston.netlify.com/faqs/</link>
+    <description>Recent content in FAQs on Lee, Hill and Johnston Insurors</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://gz-default.netlify.com/faqs/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://lee-hill-johnston.netlify.com/faqs/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Builder&#39;s Risk</title>
-      <link>https://gz-default.netlify.com/faqs/builders-risk/</link>
+      <title>Auto Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/auto-insurance/</link>
       <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
       
-      <guid>https://gz-default.netlify.com/faqs/builders-risk/</guid>
+      <guid>https://lee-hill-johnston.netlify.com/faqs/auto-insurance/</guid>
+      <description>Protecting yourself should your vehicle be damaged or stolen is just as important as having insurance for liability. Having auto insurance will insure property damage or injury to others caused by you and other household members as a result of operating a motor vehicle. Other policy features include medical payment reimbursement and reimbursement for injury caused to you by an uninsured or inadequately insured driver.
+There are many special situations where you may need to customize your policy; examples include installation of custom audio equipment, business use of your auto, and teenage and guest drivers, to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Builder&#39;s Risk</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/builders-risk/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/builders-risk/</guid>
       <description>Builders Risk Insurance covers a building and typically all materials during construction. Protection can be extended for the work of individual contractors, architects, and engineers. Optional coverage can often be added for costs not directly related to construction such as marketing, loss of income, and delayed completion.</description>
+    </item>
+    
+    <item>
+      <title>Business Liability</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/business-liability/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/business-liability/</guid>
+      <description>Commercial General Liability Insurance is an essential business coverage that protects you and your business from claims and lawsuits against you in that might occur in the course of operating your business. Identifying potential business liability risks is something Lee, Hill and Johnston Insurors has a lot of experience with, and we represent several commercial insurance companies, so we can provide you a range of options.</description>
+    </item>
+    
+    <item>
+      <title>Business Property</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/business-property/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/business-property/</guid>
+      <description>Business property insurance gets your business up and running quickly after a fire, theft, or other misfortune. Repairing your building or replacing inventory, equipment or other business personal property is time-consuming and expensive, but if you exercise the business interruption option, your commercial property insurance can also replace lost income and pay suppliers while your business is being put back together after a covered loss and claim.</description>
+    </item>
+    
+    <item>
+      <title>Business Umbrella</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/business-umbrella/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/business-umbrella/</guid>
+      <description>Standard commercial insurance liability limits should be enough to protect your business from most situations where your business is charged with legal liability for injury or property damage. But it won&amp;rsquo;t cover those catastrophic lawsuits and judgements that are increasing in frequency.</description>
+    </item>
+    
+    <item>
+      <title>Commercial Auto</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/commercial-auto/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/commercial-auto/</guid>
+      <description>Builders Risk Insurance covers a building and typically all materials during construction. Protection can be extended for the work of individual contractors, architects, and engineers. Optional coverage can often be added for costs not directly related to construction such as marketing, loss of income, and delayed completion.</description>
+    </item>
+    
+    <item>
+      <title>Group Benefits</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/group-benefits/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/group-benefits/</guid>
+      <description>Life, health, disability, retirement plans&amp;hellip;we have all the options you need to make sure your company&amp;rsquo;s overall compensation plan helps attract and retain the employees you need to give your business a competitive edge.</description>
+    </item>
+    
+    <item>
+      <title>Homeowners Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/homeowners-insurance/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/homeowners-insurance/</guid>
+      <description>Homeowners insurance protects your property—both your house and things in it—from losses due to fire, wind, theft and whole lot more. Homeowners insurance also covers you for property damage or injury to others for which you or other family members may be held legally liable.</description>
+    </item>
+    
+    <item>
+      <title>Inland Marine</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/inland-marine/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/inland-marine/</guid>
+      <description>Inland marine is a specialized type of insurance designed for mobile equipment as well as unique or special business property. Inland marine generally provides replacement for the property should it be lost, damaged or stolen. Not only is inland marine insurance used by business owners to cover their mobile business equipment, but inland marine insurance is also used when insurance is required for business property like bridges or radio towers, too.</description>
+    </item>
+    
+    <item>
+      <title>Life Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/life-insurance/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/life-insurance/</guid>
+      <description>Life insurance is an essential part of any financial program. A variety of policies and limits can be used to pay off a mortgage, cover future education expenses, fund a business buy-sell agreement and more. The type of policy and limits you need will depend on your financial goals.</description>
+    </item>
+    
+    <item>
+      <title>Risk Management</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/risk-management/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/risk-management/</guid>
+      <description>Commercial General Liability Insurance is an essential business coverage that protects you and your business from claims and lawsuits against you in that might occur in the course of operating your business. Identifying potential business liability risks is something.</description>
+    </item>
+    
+    <item>
+      <title>Umbrella Coverage</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/umbrella-coverage/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/umbrella-coverage/</guid>
+      <description>Personal umbrella insurance provides extra coverage above the liability coverage in home, auto and other personal insurance policies. Those policies usually carry liability limits of $100,000 or $300,000, but is that enough? Umbrella insurance adds a layer of coverage of $1 million, $2 million or more, and it isn&amp;rsquo;t just for the ultra-wealthy.</description>
+    </item>
+    
+    <item>
+      <title>Workers Comp</title>
+      <link>https://lee-hill-johnston.netlify.com/faqs/workers-comp/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/faqs/workers-comp/</guid>
+      <description>Workers&amp;rsquo; compensation insurance in Georgia works two ways: it protect your employees and it protects your business. If an employee is injured on the job, work comp insurance will pay for medical care, disability - whether permanent or temporary, and death benefits. If you are found to be liable for employee injury or illness, workers&amp;rsquo; compensation will protect you and your business. This type of insurance is often mandatory.</description>
     </item>
     
   </channel>
