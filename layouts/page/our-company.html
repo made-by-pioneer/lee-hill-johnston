@@ -1,0 +1,31 @@
+{{ define "main" }}
+
+<style>
+
+@media screen and (min-width:768px) {
+    
+}
+@media screen and (min-width:1200px) {
+    
+}
+</style>
+
+{{ partial "globals/inner-title.html" . }}
+
+<section class="flex flex-wrap pb-20">
+    <div class="w-full md:w-2/3 bg-contain bg-center bg-no-repeat mx-auto about-us-image">
+        <div class="py-32 sm:py-56"></div>
+    </div>
+</section>
+
+{{ partial "globals/collage-section.html" . }}
+
+<section class="bg-color-E4E2DD">
+
+{{ partial "globals/team.html" . }}
+
+</section>
+
+{{ partial "globals/testimonials.html" . }}
+
+{{ end }}

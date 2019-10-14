@@ -8,11 +8,68 @@ body {
 select {
   background-color: #EFEEEB;
 }
+input {
+  border-width: 1px;
+  border-color: #cccccc;
+  color: #262626;
+}
+input:hover {
+  border-color: #11594C;
+}
+input:focus {
+  border-color: #11594C !important;
+}
+input::placeholder {
+  color: #bbb;
+}
+textarea {
+  border-width: 1px;
+  border-color: #cccccc;
+  color: #262626;
+}
+textarea:hover {
+  border-color: #11594C;
+}
+textarea:focus {
+  border-color: #11594C !important;
+}
+textarea::placeholder {
+  color: #bbb;
+}
+form select {
+  border-width: 1px;
+  border-color: #cccccc;
+  color: #262626;
+  background-color: #fff;
+}
+form select:hover {
+  border-color: #11594C;
+}
+form select:focus {
+  border-color: #11594C !important;
+}
 .collage-image {
     background-image: url("/pageimg/about-lee-hill-johnston.png");
 }
 .select-navigation {
     background-image: url("/pageimg/About Us Image.jpg");
+}
+
+.green-button {
+    background-color: #00594D;
+}
+
+.green-button:hover {
+    background-color: #0D443A;
+    cursor: pointer;
+}
+
+.green-button:active {
+    background-color: #092E27;
+}
+
+.green-button:focus {
+    background-color: #0D443A;
 }
 
 .brown-button {
@@ -21,6 +78,7 @@ select {
 
 .brown-button:hover {
     background-color: #BB8D4D;
+    cursor: pointer;
 }
 
 .brown-button:active {
@@ -31,6 +89,35 @@ select {
 
 .brown-button:focus {
     background-color: #C2995F;
+}
+
+.about-us-image {
+    background-image: url("/pageimg/About Us Image.jpg");
+}
+
+.tns-nav {
+    text-align: center;
+}
+.tns-nav > [aria-controls] {
+    background-color: grey;
+    opacity: 0.4;
+    padding: 3px;
+    margin-right: 5px;
+    border-radius: 6em;
+    transition: .2s;
+}
+.tns-nav > .tns-nav-active {
+    background-color: #00594D;
+    padding: 5px;
+    opacity: 1;
+    border-radius: 6em;
+    transition: .2s;
+}
+.services-img-2 {
+    background-image: url("/pageimg/insuring-home-boat.jpg");
+}
+.accordion-content {
+    transition: .2s;
 }
 
 {{ if eq .Title "Home" }}

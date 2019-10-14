@@ -1,0 +1,38 @@
+{{ define "main" }}
+
+<style>
+</style>
+
+{{ partial "globals/inner-title.html" . }}
+
+<form class="flex flex-wrap pb-24 px-5 lg:px-32 font-calibre-bold" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="contact-form" method="POST" netlify>
+    <input type="hidden" name="subject" value="New Submission from Website" />
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">First Name</label>
+        <input name="first-name" type="text" placeholder="Your first name here..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Last Name</label>
+        <input name="last-name" type="text" placeholder="Your last name here..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Email</label>
+        <input name="email" type="text" placeholder="yourname@email.com" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Phone Number</label>
+        <input name="phone" type="text" placeholder="555-555-5555" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <input type="text" name="field-for-coolguys" style="display:none" />
+    <div class="flex flex-wrap w-full px-5">
+        <label class="w-full text-2xl">Message</label>
+        <textarea name="message" type="text" placeholder="What can we help you with...?" class="w-full h-32 text-base p-2 rounded-lg" required></textarea>
+    </div>
+    <div class="w-full mx-auto text-center py-8">
+        <input type="submit" value="Send Message" class="py-3 px-8 rounded-lg focus:shadow-lg green-button font-calibre-bold text-base text-white">
+    </div>
+</form>
+
+{{ partial "globals/collage-section.html" . }}
+
+{{ end }}

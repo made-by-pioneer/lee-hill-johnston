@@ -20,7 +20,7 @@ description = "This domain is established to be used for illustrative examples i
 [[menu.desktop]]
     identifier = "faqs"
     name = "FAQs"
-    url = "/faq/"
+    url = "/faqs/"
     weight = 3
 [[menu.desktop]]
     identifier = "contactUs"
@@ -41,13 +41,13 @@ description = "This domain is established to be used for illustrative examples i
     [[menu.mobile]]
         identifier = "team"
         name = "Team"
-        url = "/team/"
+        url = "/our-team/"
         weight = 2
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "reputation"
         name = "Reputation"
-        url = "/reputation/"
+        url = "/our-reputation/"
         weight = 3
         parent = "ourCompany"
 [[menu.mobile]]

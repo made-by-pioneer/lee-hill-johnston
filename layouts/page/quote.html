@@ -1,0 +1,72 @@
+{{ define "main" }}
+
+<style>
+</style>
+
+{{ partial "globals/inner-title.html" . }}
+
+<form class="flex flex-wrap pb-24 px-5 lg:px-32 font-calibre-bold" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="contact-form" method="POST" netlify>
+    <input type="hidden" name="subject" value="New Submission from Website" />
+    <div class="flex flex-wrap w-full pb-6 px-5">
+        <label class="w-full text-xl">What kind of quote are you looking for?</label>
+        <select id="" class="w-full text-base p-2 rounded-lg">
+            <option value="" disabled selected>Select an option...</option>
+            {{ $pageTitle := .Title }}
+            {{ range (where .Site.Pages "Type" "faqs") }}
+            {{ if not (eq .Title $pageTitle ) }}
+            <option value="{{ .Title }}">{{ .Title }}</option>
+            {{ else }}{{ end }}
+            {{ end }}
+        </select>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">First Name</label>
+        <input name="first-name" type="text" placeholder="Your first name here..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Last Name</label>
+        <input name="last-name" type="text" placeholder="Your last name here..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Address</label>
+        <input name="address" type="text" placeholder="Your home address here..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">City</label>
+        <input name="city" type="text" placeholder="What city do you live in...?" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Country</label>
+        <input name="country" type="text" placeholder="What country do you live in...?" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">State</label>
+        <input name="state" type="text" placeholder="What state do you live in...?" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Email</label>
+        <input name="email" type="email" placeholder="yourname@email.com" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Phone Number</label>
+        <input name="phone" type="tel" placeholder="555-555-5555" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">Do you have current policies with us?</label>
+        <select id="" class="w-full text-base p-2 rounded-lg" name="do-you-have-current-policies-with-us">
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+        </select>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">How did you hear about us?</label>
+        <input name="how-did-you-hear-about-us" type="text" placeholder="We'd love to know..." class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="w-full mx-auto text-center py-8">
+        <input type="submit" value="Get a Quote" class="py-3 px-8 rounded-lg focus:shadow-lg green-button font-calibre-bold text-base text-white">
+    </div>
+</form>
+
+{{ partial "globals/collage-section.html" . }}
+
+{{ end }}

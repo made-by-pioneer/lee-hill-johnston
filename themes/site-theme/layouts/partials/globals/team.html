@@ -1,0 +1,25 @@
+<div class="flex flex-wrap pt-16 pb-16">
+    <div class="w-5/6 lg:w-1/2 mx-auto text-center">
+        <h2 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">Our Team</h2>
+        <p class="font-calibre text-base md:text-2xl text-color-262626">We’re your neighbors, your friends, and your local insurance professionals. We’re dedicated to researching the best coverage options for you and committed to tailoring them to your specific auto insurance, home insurance, or business insurance needs. Behind every great company is a great team. Meet ours.</p>
+    </div>
+</div>
+
+<div class="flex flex-wrap pb-12">
+    <div class="flex flex-wrap w-11/12 mx-auto">
+        {{ range where .Site.Pages "Type" "team" }}
+        <style>
+            .team-img-{{ .Title | urlize }} {
+                background-image: url("{{ .Params.team_img }}");
+            }
+        </style>
+        <div class="w-5/6 sm:w-1/2 md:w-1/3 lg:w-1/4 mx-auto pb-8 px-3">
+            <div class="bg-contain bg-center bg-no-repeat team-img-{{ .Title | urlize }}">
+                <div class="py-40"></div>
+            </div>
+            <h6 class="font-canela text-3xl text-color-11594C text-center leading-tight pt-2">{{ .Title }}</h6>
+            <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+        </div>
+        {{ end }}
+    </div>
+</div>

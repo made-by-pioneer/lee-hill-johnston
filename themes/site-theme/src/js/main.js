@@ -1,6 +1,4 @@
 import styles from './../css/main.css';
-import ScrollReveal from 'scrollreveal';
-import MicroModal from 'micromodal';
 import { tns } from "tiny-slider/src/tiny-slider";
 
 // mobile menu toggle
@@ -23,53 +21,12 @@ closemenu.onclick = function() {
 
 // END
 
-// init micromodal's js
-
-MicroModal.init();
-
-// END
-
-// Reveal sections on scroll
-
-ScrollReveal().reveal('.fadeOnScroll');
-
-// END
-
-// Scroll anchor links
-
-(function() {
-	scrollTo();
-})();
-
-function scrollTo() {
-	const links = document.querySelectorAll('.scroll');
-	links.forEach(each => (each.onclick = scrollAnchors));
-}
-
-function scrollAnchors(e, respond = null) {
-	const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-	e.preventDefault();
-	var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-	const targetAnchor = document.querySelector(targetID);
-	if (!targetAnchor) return;
-	const originalTop = distanceToTop(targetAnchor);
-	window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-	const checkIfDone = setInterval(function() {
-		const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-		if (distanceToTop(targetAnchor) === 0 || atBottom) {
-			targetAnchor.tabIndex = '-1';
-			targetAnchor.focus();
-			window.history.pushState('', '', targetID);
-			clearInterval(checkIfDone);
-		}
-	}, 100);
-}
-
-// END
-
 // Sliders
 
-var sliderTestimonials = tns({
+var servicessliderCheck = document.getElementById('services-slider-items');
+if (servicessliderCheck !== null) {
+
+var servicesSlider = tns({
   "mode": "carousel",
   "container": "#services-slider-items",
   "items": 1,
@@ -82,7 +39,8 @@ var sliderTestimonials = tns({
   "speed": 400,
   "edgePadding": 0,
   "center": true,
-  "mouseDrag": true,
+  "mouseDrag": false,
+  "arrowKeys": false,
   responsive: {
 	768: {
 		"edgePadding": 150,
@@ -92,5 +50,93 @@ var sliderTestimonials = tns({
 	}
   }
 });
+
+window.onload = function(){ 
+  var info = servicesSlider.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent - 1].classList.add('highlight');
+  console.log(info.displayIndex)
+}
+
+document.querySelector('.next-button').onclick = function () {
+
+  var info = servicesSlider.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent].classList.add('highlight');
+  info.slideItems[indexCurrent - 1].classList.remove('highlight');
+  console.log(info.displayIndex)
+
+}
+
+document.querySelector('.previous-button').onclick = function () {
+
+
+  var info = servicesSlider.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent - 2].classList.add('highlight');
+  info.slideItems[indexCurrent - 1].classList.remove('highlight');
+  console.log(info.displayIndex)
+
+}
+
+}
+
+var testimonialsliderCheck = document.getElementById('testimonial-slider-controls');
+if (testimonialsliderCheck !== null) {
+
+var sliderTestimonials = tns({
+  "mode": "carousel",
+  "container": "#testimonial-slider-items",
+  "items": 1,
+  "controlsContainer": "#testimonial-slider-controls",
+  "nav": true,
+  "navPosition": "bottom",
+  "loop": false,
+  "startIndex": 1,
+  "swipeAngle": false,
+  "speed": 400,
+  "edgePadding": 0,
+  "center": true,
+  "mouseDrag": false,
+  "arrowKeys": false,
+  responsive: {
+	768: {
+		"edgePadding": 150,
+	},
+	1200: {
+		"edgePadding": 294,
+	}
+  }
+});
+
+window.onload = function(){ 
+  var info = sliderTestimonials.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent - 1].classList.add('highlight');
+  console.log(info.displayIndex)
+}
+
+document.querySelector('.next-button').onclick = function () {
+
+  var info = sliderTestimonials.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent].classList.add('highlight');
+  info.slideItems[indexCurrent - 1].classList.remove('highlight');
+  console.log(info.displayIndex)
+
+}
+
+document.querySelector('.previous-button').onclick = function () {
+
+
+  var info = sliderTestimonials.getInfo(),
+  indexCurrent = info.displayIndex;
+  info.slideItems[indexCurrent - 2].classList.add('highlight');
+  info.slideItems[indexCurrent - 1].classList.remove('highlight');
+  console.log(info.displayIndex)
+
+}
+
+}
 
 // END

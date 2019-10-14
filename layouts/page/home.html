@@ -1,32 +1,14 @@
 {{ define "main" }}
 
 <style>
-.tns-nav {
-    text-align: center;
+
+#services-slider .highlight {
+    opacity: 1 !important;
+    transition: 1s !important;
 }
-.tns-nav > [aria-controls] {
-    background-color: grey;
-    opacity: 0.4;
-    padding: 3px;
-    margin-right: 5px;
-    border-radius: 6em;
-    transition: .2s;
-}
-.tns-nav > .tns-nav-active {
-    background-color: #00594D;
-    padding: 5px;
-    opacity: 1;
-    border-radius: 6em;
-    transition: .2s;
-}
-.services-img-2 {
-    background-image: url("/pageimg/insuring-home-boat.jpg");
-}
-.accordion-content {
-    transition: .2s;
-}
-.about-us-image {
-    background-image: url("/pageimg/About Us Image.jpg");
+#services-slider .tns-item {
+    opacity: .50;
+    transition: 2s;
 }
 
 @media screen and (min-width:1200px) {
@@ -105,10 +87,10 @@
     </div>
     </div>
     <ul id="services-slider-controls" class="flex flex-wrap w-full -mt-200 pt-32 controls">
-        <div class="relative w-1/4 h-full text-left z-0 outline-none">
+        <div class="relative w-1/4 h-full text-left z-0 outline-none previous-button">
             
         </div>
-        <div class="relative w-1/4 h-full ml-auto text-right z-0 outline-none">
+        <div class="relative w-1/4 h-full ml-auto text-right z-0 outline-none next-button">
             
         </div>
     </ul>
@@ -124,41 +106,7 @@
         </a>
     </div>
     <div class="w-full lg:w-1/2 pt-20 lg:pt-0">
-        <div class="pb-6 accordion-item">
-            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-                <div class="z-min1">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Business Insurance Faqs</h6>
-                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How do I file a claim?</h3>
-                </div>
-            </div>
-            <p class="hidden font-calibre text-lg leading-tight accordion-content">
-                You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
-            </p>
-        </div>
-        
-        <div class="pb-6 accordion-item">
-            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-                <div class="z-min1">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Life and Health Insurance Faqs</h6>
-                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">Are rented vehicles covered under my business auto policy?</h3>
-                </div>
-            </div>
-            <p class="hidden font-calibre text-lg leading-tight accordion-content">
-                You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
-            </p>
-        </div>
-        
-        <div class="accordion-item">
-            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-                <div class="z-min1">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance Faqs</h6>
-                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How often should I review my life insurance policy?</h3>
-                </div>
-            </div>
-            <p class="hidden font-calibre text-lg leading-tight accordion-content">
-                You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
-            </p>
-        </div>
+        {{ partial "scripts/accordian.html" (dict "name" "home" ) }}
     </div>
 
 </section>

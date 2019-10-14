@@ -1,0 +1,39 @@
+<style>
+    .highlight {
+        color: #00594D !important;
+        opacity: 1 !important;
+        transition: 1s !important;
+    }
+    .tns-item {
+        opacity: .25;
+        transition: 2s;
+    }
+</style>
+<section class="flex flex-wrap pt-24">
+    <div class="w-5/6 lg:w-1/2 mx-auto text-center">
+        <h2 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">Our Reputation</h2>
+        <p class="font-calibre text-base md:text-2xl text-color-262626">Lee, Hill & Johnston Insurors has been doing business in Statesboro, Georgia since 1963. We are proud to provide insurance and financial solutions to more than 6,000 individuals and businesses in our area. We are committed to building a solid relationship with customers through practical solutions and excellent service.</p>
+    </div>
+</section>
+
+<section id="testimonial-slider" class="flex flex-wrap mx-auto pb-12 lg:pb-48 testimonial-slider">
+    <div id="testimonial-slider-items" class="flex flex-wrap">
+        {{ range where .Site.Pages "Type" "testimonial" }}
+            <div class="flex flex-wrap py-5 md:py-12">
+                <div class="w-full text-center p-12">
+                    <h3 class="font-canela text-xl sm:text-2xl lg:text-4xl pb-8 leading-tight">{{ .Params.testimonial }}</h3>
+                    <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.client }}</h6>
+                </div>
+            </div>
+        {{ end }}
+    </div>
+    <ul id="testimonial-slider-controls" class="flex flex-wrap w-full -mt-200 pt-32 controls">
+        <div class="relative w-1/4 h-full text-left z-0 outline-none previous-button">
+            
+        </div>
+        <div class="relative w-1/4 h-full ml-auto text-right z-0 outline-none next-button">
+            
+        </div>
+    </ul>
+    
+</section>
