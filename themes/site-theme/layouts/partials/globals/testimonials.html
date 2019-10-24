@@ -9,14 +9,14 @@
         transition: 2s;
     }
 </style>
-<section class="flex flex-wrap pt-24">
+<section class="flex flex-wrap max-w-8xl mx-auto pt-24">
     <div class="w-5/6 lg:w-1/2 mx-auto text-center">
         <h2 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">Our Reputation</h2>
         <p class="font-calibre text-base md:text-2xl text-color-262626">Lee, Hill & Johnston Insurors has been doing business in Statesboro, Georgia since 1963. We are proud to provide insurance and financial solutions to more than 6,000 individuals and businesses in our area. We are committed to building a solid relationship with customers through practical solutions and excellent service.</p>
     </div>
 </section>
 
-<section id="testimonial-slider" class="flex flex-wrap mx-auto pb-12 lg:pb-48 testimonial-slider">
+<section id="testimonial-slider" class="flex flex-wrap max-w-8xl mx-auto pb-12 lg:pb-48 testimonial-slider">
     <div id="testimonial-slider-items" class="flex flex-wrap">
         {{ range where .Site.Pages "Type" "testimonial" }}
             <div class="flex flex-wrap py-5 md:py-12">
