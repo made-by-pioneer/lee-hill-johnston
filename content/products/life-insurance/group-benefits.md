@@ -5,7 +5,7 @@ title = "Group Benefits"
 page_status = "USE THIS FIELD FOR EDITING BODY WITH CSS"
 publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
-insurance_type = "Personal Insurance"
+insurance_type = "Life Insurance"
 navigation_image = "/pageimg/group-benefits.jpg"
 companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 +++

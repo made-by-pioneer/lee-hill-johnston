@@ -40,8 +40,20 @@ description = "Whether it’s home or auto, business risk management, or life/he
     [[menu.desktop]]
         identifier = "personalInsurance"
         name = "Personal Insurance"
-        url = "/products/personal-insurance/"
+        url = "/products/personal/auto-insurance/"
         weight = 1
+        parent = "ourProducts"
+    [[menu.desktop]]
+        identifier = "businessInsurance"
+        name = "Business Insurance"
+        url = "/products/business/business-liability/"
+        weight = 2
+        parent = "ourProducts"
+    [[menu.desktop]]
+        identifier = "lifeInsurance"
+        name = "Life and Health Insurance"
+        url = "/products/life-insurance/life-insurance/"
+        weight = 3
         parent = "ourProducts"
 [[menu.desktop]]
     identifier = "faqs"
@@ -70,12 +82,6 @@ description = "Whether it’s home or auto, business risk management, or life/he
         url = "/team/"
         weight = 2
         parent = "ourCompany"
-    [[menu.mobile]]
-        identifier = "reputation"
-        name = "Reputation"
-        url = "/reputation/"
-        weight = 3
-        parent = "ourCompany"
 [[menu.mobile]]
     identifier = "ourProducts"
     name = "Products"
@@ -84,19 +90,19 @@ description = "Whether it’s home or auto, business risk management, or life/he
     [[menu.mobile]]
         identifier = "personal"
         name = "Personal"
-        url = "/faqs/personal/"
+        url = "/products/personal/auto-insurance/"
         weight = 1
         parent = "ourProducts"
     [[menu.mobile]]
         identifier = "business"
         name = "Business"
-        url = "/faqs/business/"
+        url = "/products/business/business-liability/"
         weight = 2
         parent = "ourProducts"
     [[menu.mobile]]
         identifier = "lifeandhealth"
         name = "Life / Health"
-        url = "/faqs/life-health/"
+        url = "/products/life-insurance/life-insurance/"
         weight = 3
         parent = "ourProducts"
 [[menu.mobile]]

@@ -10,6 +10,10 @@
             {{ range (where .Site.Pages ".Params.insurance_type" "Business Insurance") }}
             <option value="{{ .Permalink }}"> - {{ .Title }}</option>
             {{ end }}
+            <option value="" disabled>Life and Health Insurance</option>
+            {{ range (where .Site.Pages ".Params.insurance_type" "Life Insurance") }}
+            <option value="{{ .Permalink }}"> - {{ .Title }}</option>
+            {{ end }}
         </select>
     </div>
 </div>
