@@ -1,0 +1,77 @@
+
+{{ range where .Site.Pages "Type" "faqs" }}
+
+<div class="pb-6 accordion-item-{{ .name }}">
+    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+        <div class="z-min1">
+        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.faq_type }}</h6>
+        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">{{ .Title }}</h3>
+        </div>
+    </div>
+    <p class="hidden font-calibre text-lg leading-tight accordion-content-{{ .name }}">
+        {{ .Params.text }}
+    </p>
+</div>
+
+{{ end }}
+
+<div class="pb-6 accordion-item-{{ .name }}">
+    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+        <div class="z-min1">
+        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Life and Health Insurance Faqs</h6>
+        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">Are rented vehicles covered under my business auto policy?</h3>
+        </div>
+    </div>
+    <p class="hidden font-calibre text-lg leading-tight accordion-content-{{ .name }}">
+        You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
+    </p>
+</div>
+
+<div class="accordion-item-{{ .name }}">
+    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+        <div class="z-min1">
+        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance Faqs</h6>
+        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How often should I review my life insurance policy?</h3>
+        </div>
+    </div>
+    <p class="hidden font-calibre text-lg leading-tight accordion-content-{{ .name }}">
+        You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
+    </p>
+</div>
+
+<script>
+function addClass(el, klass_{{ .name | safeJS }}) {
+  el.classList.add(klass_{{ .name | safeJS }});
+}
+
+function removeClass(el, klass_{{ .name | safeJS }}) {
+  el.classList.remove(klass_{{ .name | safeJS }});
+}
+
+const accordionItems{{ .name | safeJS }} = document.querySelectorAll('.accordion-item-{{ .name }}');
+const accordionContentPanes{{ .name | safeJS }} = document.querySelectorAll('.accordion-content-{{ .name }}');
+
+// Show first by default
+accordionItems{{ .name | safeJS }}[0].querySelector('.accordion-content-{{ .name }}').classList.remove('hidden');
+
+// Hide each besides the targeted accordion on click
+accordionItems{{ .name | safeJS }}.forEach(function(accordion) {
+  // Clicked accordeions clickable target
+  const accordionTitleRow = accordion.firstElementChild;
+
+  accordionTitleRow.addEventListener('click', toggleAccordion);
+  // console.log(accordion.firstElementChild);
+});
+
+function toggleAccordion(e) {
+  accordionContentPanes{{ .name | safeJS }}.forEach(function(content) {
+    if (content.previousElementSibling === e.target) {
+      removeClass(content, 'hidden');
+      addClass(content.parentElement, 'active');
+    } else {
+      removeClass(content.parentElement, 'active');
+      addClass(content, 'hidden');
+    }
+  });
+}
+</script>

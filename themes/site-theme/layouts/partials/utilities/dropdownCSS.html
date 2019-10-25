@@ -4,6 +4,7 @@
         transition:all .3s ease;
         transform:scaleY(1);
         color:#333;
+        margin-top: 8px;
     }
     .dropdown .{{ .Name | urlize }}-dropdown-selection {
         color:#fff;
@@ -12,8 +13,21 @@
         list-style:none;
         transform:scaleY(0.001);
         position:absolute;
-        left:0;
+        left:0%;
         top:100%;
         transition:all .3s ease;
     }
+    .dropdown .{{ .Name | urlize }}-dropdown-selection::after {
+        position: absolute;
+  content: "";
+  width: 0px;
+  height: 0px;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+  border-left: 10px solid transparent;
+  top: -15px;
+  right: 45%;
+    }
+
 </style>

@@ -9,7 +9,7 @@
     <input type="hidden" name="subject" value="New Submission from Website" />
     <div class="flex flex-wrap w-full pb-6 px-5">
         <label class="w-full text-xl">What kind of quote are you looking for?</label>
-        <select id="" class="w-full text-base p-2 rounded-lg">
+        <select id="" class="w-full text-base p-2 rounded-lg select-css-quote">
             <option value="" disabled selected>Select an option...</option>
             {{ $pageTitle := .Title }}
             {{ range (where .Site.Pages "Type" "faqs") }}
@@ -53,7 +53,7 @@
     </div>
     <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
         <label class="w-full text-xl">Do you have current policies with us?</label>
-        <select id="" class="w-full text-base p-2 rounded-lg" name="do-you-have-current-policies-with-us">
+        <select id="" class="w-full text-base p-2 rounded-lg select-css-quote" name="do-you-have-current-policies-with-us">
             <option value="Yes">Yes</option>
             <option value="No">No</option>
         </select>

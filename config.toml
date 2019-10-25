@@ -10,13 +10,39 @@ description = "Whether it’s home or auto, business risk management, or life/he
 [[menu.desktop]]
     identifier = "ourCompany"
     name = "Our Company"
-    url = "/about-the-company/"
+    url = "#"
     weight = 1
+    post = "hover"
+    [[menu.desktop]]
+        identifier = "ourTeam"
+        name = "Our Team"
+        url = "/team/"
+        weight = 1
+        parent = "ourCompany"
+    [[menu.desktop]]
+        identifier = "ourCompany1"
+        name = "Our Company"
+        url = "/about-the-company/"
+        weight = 2
+        parent = "ourCompany"
+    [[menu.desktop]]
+        identifier = "ourHistory"
+        name = "Our History"
+        url = "/history/"
+        weight = 3
+        parent = "ourCompany"
 [[menu.desktop]]
     identifier = "ourProducts"
     name = "Our Products"
-    url = "/our-products/"
+    url = "#"
     weight = 2
+    post = "hover"
+    [[menu.desktop]]
+        identifier = "personalInsurance"
+        name = "Personal Insurance"
+        url = "/products/personal-insurance/"
+        weight = 1
+        parent = "ourProducts"
 [[menu.desktop]]
     identifier = "faqs"
     name = "FAQs"
@@ -144,14 +170,14 @@ description = "Whether it’s home or auto, business risk management, or life/he
         isPlainText = true
         mediaType = "text/noExt"
         path = "/"
-    [outputFormats.Algolia]
-        baseName = "algolia"
+    [outputFormats.insurance-faqs]
+        baseName = "insurance-faqs"
         isPlainText = true
         mediaType = "application/json"
         notAlternative = true
 
 [outputs]
-  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "Algolia"]
+  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "insurance-faqs"]
 
 [params.algolia]
     appId = ""

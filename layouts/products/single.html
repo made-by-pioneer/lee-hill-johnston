@@ -1,0 +1,130 @@
+{{ define "main" }}
+
+<style>
+.select-navigation {
+    background-image: url("{{ .Params.navigation_image }}");
+}
+.inner-section-content p {
+    padding-bottom: 40px;
+}
+</style>
+
+{{ partial "globals/select-navigation.html" . }}
+
+<div class="flex flex-wrap max-w-8xl mx-auto pt-12 lg:pt-20 pb-20 lg:px-32 inner-section-content">
+    <div class="w-5/6 lg:w-7/12 pb-12 lg:pb-0 xxl:pl-32 lg:pr-20 font-calibre text-base md:text-2xl text-color-262626 mx-auto">
+        {{ .Content }}
+    </div>
+    <div class="w-5/6 lg:w-5/12 xxl:pr-56 mx-auto text-center lg:text-left">
+        <p class="font-calibre text-base md:text-2xl text-color-11594C pb-8">Do you have questions about your {{ .Title | lower }} policy?</p>
+        <a href="" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">Talk to an Agent</span>
+        </a>
+    </div>
+</div>
+
+{{ if eq .Params.extra_section true }}
+<section id="clients-represented" class="flex flex-wrap items-start max-w-8xl mx-auto pb-16 lg:px-20">
+    <div class="w-5/6 lg:w-1/3 mx-auto pt-5 pb-12 lg:pb-0 lg:pl-12">
+        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.insurance_type }}</h6>
+        <h1 class="font-canela text-3xl text-color-11594C leading-tight pb-8">{{ .Params.extra_title }}</h1>
+        <a href="" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">Get a Quote</span>
+        </a>
+    </div>
+    <div class="w-5/6 lg:w-2/3 mx-auto lg:px-12">
+        <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">{{ .Params.extra_content }}</p>
+        {{ if .Params.extra_bullets }}
+        <ul class="list-disc list-inside font-calibre text-base md:text-2xl text-color-262626 pb-8">
+            {{ range .Params.extra_bullets }}
+            <li class="pb-4" ><span class="-ml-3">{{ . }}</span></li>
+            {{ end }}
+        </ul>
+        {{ else }}{{ end }}
+        {{ if .Params.extra_content_after_bullets }}
+        <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">{{ .Params.extra_content_after_bullets }}</p>
+        {{ else }}{{ end }}
+        {{ if .Params.extra_bullets_after }}
+        <ul class="list-disc list-inside font-calibre text-base md:text-2xl text-color-262626 pb-8">
+            {{ range .Params.extra_bullets_after }}
+            <li class="pb-4" ><span class="-ml-3">{{ . }}</span></li>
+            {{ end }}
+        </ul>
+        {{ else }}{{ end }}
+    </div>
+</section>
+{{ else }}{{ end }}
+
+{{ if eq .Params.extra_section2 true }}
+<section id="clients-represented" class="flex flex-wrap items-start max-w-8xl mx-auto pb-16 lg:px-20">
+    <div class="w-5/6 lg:w-1/3 mx-auto pt-5 pb-12 lg:pb-0 lg:pl-12">
+        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.insurance_type }}</h6>
+        <h1 class="font-canela text-3xl text-color-11594C leading-tight pb-8">{{ .Params.extra_title2 }}</h1>
+        <a href="" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">Get a Quote</span>
+        </a>
+    </div>
+    <div class="w-5/6 lg:w-2/3 mx-auto lg:px-12">
+        <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">{{ .Params.extra_content2 }}</p>
+        {{ if .Params.extra_bullets2 }}
+        <ul class="list-disc list-inside font-calibre text-base md:text-2xl text-color-262626 pb-8">
+            {{ range .Params.extra_bullets2 }}
+            <li class="pb-4" ><span class="-ml-3">{{ . }}</span></li>
+            {{ end }}
+        </ul>
+        {{ else }}{{ end }}
+        {{ if .Params.extra_content_after_bullets2 }}
+        <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">{{ .Params.extra_content_after_bullets2 }}</p>
+        {{ else }}{{ end }}
+    </div>
+</section>
+{{ else }}{{ end }}
+
+<section id="clients-represented" class="flex flex-wrap items-start max-w-8xl mx-auto pb-16 lg:px-20">
+    <div class="w-5/6 lg:w-1/3 mx-auto pt-5 pb-12 lg:pb-0 lg:pl-12">
+        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.insurance_type }}</h6>
+        <h1 class="font-canela text-3xl text-color-11594C leading-tight pb-8">Companies We Represent</h1>
+        <a href="" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">Get a Quote</span>
+        </a>
+    </div>
+    <div class="w-5/6 lg:w-2/3 mx-auto lg:px-12">
+        <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">At Lee Hill and Johnston, we pride ourselves on our independence. The variety of companies we offer our clients enable us to give you the best coverage and the best price. Below is a list of companies we represent:</p>
+        <ul class="list-disc list-inside font-calibre text-base md:text-2xl text-color-262626 pb-8">
+            {{ range (where .Site.Pages "Type" "companies") }}
+            <li><span class="-ml-3">{{ .Title }}</span></li>
+            {{ end }}
+        </ul>
+    </div>
+</section>
+
+{{ if eq .Params.auto_extra_section true }}
+<style>
+.auto-extra-image {
+    background-image: url("{{ .Params.auto_extra_image }}")
+}
+</style>
+<section id="auto-extra-section" class="flex flex-wrap items-center max-w-8xl mx-auto pb-48 px-8 lg:px-20">
+    <div class="w-full lg:w-7/12 bg-cover shadow-lg auto-extra-image">
+        <div class="py-24 sm:py-56 lg:py-80"></div>
+    </div>
+    <div class="w-full lg:w-5/12 pt-5 px-0 lg:px-16">
+        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Params.insurance_type }}</h6>
+        <h1 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight pb-3">{{ .Params.auto_extra_title }}</h1>
+        <p class="font-calibre text-base md:text-lg font-thin leading-snug pb-8">{{ .Params.auto_extra_content }}</p>
+        <ul class="list-disc list-inside font-calibre text-base md:text-lg text-color-262626 pb-4">
+            {{ range .Params.auto_extra_bullets }}
+            <li class="pb-4" ><span class="-ml-3">{{ . }}</span></li>
+            {{ end }}
+        </ul>
+        <p class="font-calibre text-base md:text-lg font-thin leading-snug pb-8">{{ .Params.auto_extra_content_after_bullets }}</p>
+        <a href="" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">Talk to an Agent</span>
+        </a>
+    </div>
+</section>
+{{ else }}{{ end }}
+
+{{ partial "globals/collage-section.html" . }}
+
+{{ end }}

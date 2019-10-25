@@ -1,0 +1,6 @@
+{{- $.Scratch.Add "index" slice -}}
+    {{- range (where .Site.Pages "Type" "faqs") -}}
+    {{ $title_link := .Title | urlize }}
+        {{- $.Scratch.Add "index" (dict "objectID" .File.UniqueID "title" .Title "link" $title_link "date" .Date.UTC.Unix "excerpt" .Content  "href" .URL  "type" .Type )}}
+    {{- end -}}
+{{- $.Scratch.Get "index" | jsonify -}}

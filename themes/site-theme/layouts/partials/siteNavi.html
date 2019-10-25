@@ -6,20 +6,20 @@
   {{ if .HasChildren }}
   {{ $dropdownName := .Name }}
   {{ partial "utilities/dropdownCSS.html" (dict "context" . "Name" $dropdownName) }}
-  <div id="{{ .Name | urlize }}-dropdown" class="relative bg-color-1c2541 inline-flex select-none dropdown">
+  <div id="{{ .Name | urlize }}-dropdown" class="relative bg-color-1c2541 inline-flex select-none pl-6 dropdown">
   <a href="{{ if .Post }}{{.URL}}{{ else }}#{{ end }}" class="desktop-menu-item" role="button">
     {{ .Pre }}
       <span>{{ .Name }}</span><i class="text-2xs pl-1 fas fa-angle-down"></i>
   </a>
-  <ul class="z-50 pt-1 {{ .Name | urlize }}-dropdown-selection" role="menu">
+  <ul class="z-50 pt-1 pb-32 {{ .Name | urlize }}-dropdown-selection" role="menu">
     {{ range .Children }}
         {{ if .HasChildren }}
         {{ $dropdownName := .Name }}
         {{ partial "utilities/dropdownCSS.html" (dict "context" . "Name" $dropdownName) }}
-      <div id="{{ .Name | urlize }}-dropdown" class="w-48 relative border border-white bg-color-1c2541 p-2 select-none text-black text-xs text-left hover:cursor-pointer dropdown" onclick="window.location = {{ .URL }};">{{ .Name }}<i class="text-2xs pt-.5 pr-3 absolute right-0 fas fa-angle-right"></i>
+      <div id="{{ .Name | urlize }}-dropdown" class="w-48 relative bg-white p-2 select-none text-black text-xs text-left hover:cursor-pointer dropdown" onclick="window.location = {{ .URL }};">{{ .Name }}<i class="text-2xs pt-.5 pr-3 absolute right-0 fas fa-angle-right"></i>
       <ul class="w-56 bg-color-1c2541 absolute top-0 ml-48 {{ .Name | urlize }}-dropdown-selection" role="menu">
         {{ range .Children }}
-        <div class="flex flex-wrap select-none border border-white text-black p-2">
+        <div class="flex flex-wrap select-none text-black p-2">
             <a href="{{.URL}}" class="text-2xs menu-item">{{ .Name }}</a>
         </div>
         {{ end }}
@@ -38,8 +38,8 @@
         {{ partial "utilities/dropdownClickScript.html" (dict "context" . "Name" $dropdownName) }}
         {{ end }}
       {{ else }}
-        <div class="w-40 border border-white bg-color-1c2541 p-2 leading-tight select-none text-black text-xs text-left">
-            <a href="{{.URL}}" class="menu-item">{{ .Name }}</a>
+        <div class="w-40 bg-white p-4 leading-tight select-none text-black text-xs text-left">
+            <a href="{{.URL}}" class="text-black text-center menu-item">{{ .Name }}</a>
         </div>
         {{ end }}
         {{ end }}

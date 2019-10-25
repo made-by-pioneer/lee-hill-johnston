@@ -1,13 +1,37 @@
 <div class="flex flex-wrap bg-cover bg-center bg-no-repeat py-12 md:py-20 lg:py-32 select-navigation">
     <div class="w-auto max-w-8xl mx-auto">
-        <select id="" class="flex flex-wrap w-64 lg:w-152 h-12 font-canela text-2xl lg:text-3xl text-color-00594D rounded" onchange="location = this.value;">
+        <select id="" class="flex flex-wrap w-64 lg:w-152 h-12 font-canela text-2xl text-color-00594D rounded select-css" onchange="location = this.value;">
             <option value="">{{ .Title }}</option>
-            {{ $pageTitle := .Title }}
-            {{ range (where .Site.Pages "Type" "faqs") }}
-            {{ if not (eq .Title $pageTitle ) }}
-            <option value="{{ .Permalink }}">{{ .Title }}</option>
-            {{ else }}{{ end }}
+            <option value="" disabled>Personal Insurance</option>
+            {{ range (where .Site.Pages ".Params.insurance_type" "Personal Insurance") }}
+            <option value="{{ .Permalink }}"> - {{ .Title }}</option>
+            {{ end }}
+            <option value="" disabled>Business Insurance</option>
+            {{ range (where .Site.Pages ".Params.insurance_type" "Business Insurance") }}
+            <option value="{{ .Permalink }}"> - {{ .Title }}</option>
             {{ end }}
         </select>
     </div>
 </div>
+
+<!-- <div class="flex flex-wrap bg-cover bg-center bg-no-repeat py-12 md:py-20 lg:py-32 select-navigation">
+    <div class="w-auto max-w-8xl mx-auto">
+        <select id="" class="flex flex-wrap w-64 lg:w-152 h-12 font-canela text-2xl text-color-00594D rounded select-css" onchange="location = this.value;">
+            <option value="">{{ .Title }}</option>
+            <option value="" disabled>Personal Insurance</option>
+            {{ $pageTitle := .Title }}
+            {{ range (where .Site.Pages ".Params.insurance_type" "Personal Insurance") }}
+            {{ if not (eq .Title $pageTitle ) }}
+            <option value="{{ .Permalink }}"> - {{ .Title }}</option>
+            {{ else }}{{ end }}
+            {{ end }}
+            <option value="" disabled>Business Insurance</option>
+            {{ $pageTitle := .Title }}
+            {{ range (where .Site.Pages ".Params.insurance_type" "Business Insurance") }}
+            {{ if not (eq .Title $pageTitle ) }}
+            <option value="{{ .Permalink }}"> - {{ .Title }}</option>
+            {{ else }}{{ end }}
+            {{ end }}
+        </select>
+    </div>
+</div> -->
