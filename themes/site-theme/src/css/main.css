@@ -63,3 +63,28 @@
   background-size: auto;
   background-repeat: no-repeat;
 }
+
+.highlight {};
+
+.tns-outer {}
+.tns-nav {}
+.tns-nav-active {}
+.tns-liveregion  {}
+.tns-visually-hidden {}
+.current {}
+.tns-visually-hidden {}
+.tns-liveregion {}
+.tns-inner {}
+.tns-slider {}
+.tns-gallery {}
+.tns-subpixel {}
+.tns-calc {}
+.tns-horizontal {}
+.tns-item {}
+.tns-normal {}
+.tns-slide-active {}
+.tns-fadeIn {}
+.tns-fadeOut {}
+.controls {}
+.tns-carousel {}
+.tns-ovh {}

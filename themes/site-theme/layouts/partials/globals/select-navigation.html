@@ -1,4 +1,5 @@
 <div class="flex flex-wrap bg-cover bg-center bg-no-repeat py-12 md:py-20 lg:py-32 select-navigation">
+    <div class="flex flex-wrap w-full -my-12 md:-my-20 lg:-my-32 py-12 md:py-20 lg:py-32 bg-blk-overlay selection-navigation-overlay">
     <div class="w-auto max-w-8xl mx-auto">
         <select id="" class="flex flex-wrap w-64 lg:w-152 h-12 font-canela text-2xl text-color-00594D rounded select-css" onchange="location = this.value;">
             <option value="">{{ .Title }}</option>
@@ -15,6 +16,7 @@
             <option value="{{ .Permalink }}"> - {{ .Title }}</option>
             {{ end }}
         </select>
+    </div>
     </div>
 </div>
 

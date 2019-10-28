@@ -81,62 +81,60 @@ document.querySelector('.previous-button').onclick = function () {
 
 }
 
-var testimonialsliderCheck = document.getElementById('testimonial-slider-controls');
-if (testimonialsliderCheck !== null) {
+// var testimonialsliderCheck = document.getElementById('testimonial-slider-controls');
+// if (testimonialsliderCheck !== null) {
 
-var sliderTestimonials = tns({
-  "mode": "carousel",
-  "container": "#testimonial-slider-items",
-  "items": 1,
-  "controlsContainer": "#testimonial-slider-controls",
-  "nav": true,
-  "navPosition": "bottom",
-  "loop": false,
-  "startIndex": 1,
-  "touch": false,
-  "speed": 400,
-  "edgePadding": 0,
-  "center": true,
-  "mouseDrag": false,
-  "arrowKeys": false,
-  responsive: {
-	768: {
-		"edgePadding": 150,
-	},
-	1200: {
-		"edgePadding": 294,
-	}
-  }
-});
+// var sliderTestimonials = tns({
+//   "mode": "carousel",
+//   "container": "#testimonial-slider-items",
+//   "items": 1,
+//   "controlsContainer": "#testimonial-slider-controls",
+//   "nav": true,
+//   "navPosition": "bottom",
+//   "loop": false,
+//   "startIndex": 1,
+//   "touch": false,
+//   "speed": 400,
+//   "edgePadding": 0,
+//   "center": true,
+//   "mouseDrag": false,
+//   "arrowKeys": false,
+//   responsive: {
+// 	768: {
+// 		"edgePadding": 150,
+// 	},
+// 	1200: {
+// 		"edgePadding": 294,
+// 	}
+//   }
+// });
 
-window.onload = function(){ 
-  var info = sliderTestimonials.getInfo(),
-  indexCurrent = info.displayIndex;
-  info.slideItems[indexCurrent - 1].classList.add('highlight');
-  console.log(info.displayIndex)
-}
+// window.onload = function(){ 
+//   var info = sliderTestimonials.getInfo(),
+//   indexCurrent = info.displayIndex;
+//   info.slideItems[indexCurrent - 1].classList.add('highlight');
+//   console.log(info.displayIndex)
+// }
 
-document.querySelector('.next-button').onclick = function () {
+// document.querySelector('.next-button').onclick = function () {
 
-  var info = sliderTestimonials.getInfo(),
-  indexCurrent = info.displayIndex;
-  info.slideItems[indexCurrent].classList.add('highlight');
-  info.slideItems[indexCurrent - 1].classList.remove('highlight');
-  console.log(info.displayIndex)
+//   var info = sliderTestimonials.getInfo(),
+//   indexCurrent = info.displayIndex;
+//   info.slideItems[indexCurrent].classList.add('highlight');
+//   info.slideItems[indexCurrent - 1].classList.remove('highlight');
+//   console.log(info.displayIndex)
 
-}
+// }
 
-document.querySelector('.previous-button').onclick = function () {
+// document.querySelector('.previous-button').onclick = function () {
 
 
-  var info = sliderTestimonials.getInfo(),
-  indexCurrent = info.displayIndex;
-  info.slideItems[indexCurrent - 2].classList.add('highlight');
-  info.slideItems[indexCurrent - 1].classList.remove('highlight');
-  console.log(info.displayIndex)
+//   var info = sliderTestimonials.getInfo(),
+//   indexCurrent = info.displayIndex;
+//   info.slideItems[indexCurrent - 2].classList.add('highlight');
+//   info.slideItems[indexCurrent - 1].classList.remove('highlight');
+//   console.log(info.displayIndex)
 
-}
-
-}
+// }
 
 // END
