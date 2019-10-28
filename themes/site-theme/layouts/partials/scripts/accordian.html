@@ -1,37 +1,39 @@
 
-<div class="pb-6 accordion-item-{{ .name }}">
-    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-        <div class="z-min1">
-        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance Faqs</h6>
-        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How do I file a claim?</h3>
-        </div>
-    </div>
-    <p class="hidden font-calibre text-lg leading-tight accordion-content-{{ .name }}">
-        You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
-    </p>
-</div>
+<a id="personal-faq-home" href="#personal-faq-home" class="accordion-item-homepage">
+  <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+      <div class="z-min1">
+      <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance Faqs</h6>
+      <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How do I file a claim?</h3>
+      </div>
+  </div>
+  <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+    You can file a claim several ways. The best way is to contact the insurance company directly. For contact information by carrier, click here. You can also complete the File a Claim form on our website or call us.
+  </div>
+  <div class="pt-6"></div>
+</a>
 
-<div class="pb-6 accordion-item-{{ .name }}">
-    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-        <div class="z-min1">
-        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Business Insurance Faqs</h6>
-        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">If I rent a car or truck am I protected against loss by my business auto policy?</h3>
-        </div>
-    </div>
-    <p class="hidden font-calibre text-lg leading-tight accordion-content-{{ .name }}">
-        That depends. A business auto policy by itself won't extend protection to rented autos unless you have amended it. You can get protection for situations where you rent autos if you add Hired Auto Liability and Physical Damage coverage.
-    </p>
-</div>
+<a id="business-faq-home" href="#business-faq-home" class="accordion-item-homepage">
+  <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+      <div class="z-min1">
+      <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Business Insurance Faqs</h6>
+      <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">If I rent a car or truck am I protected against loss by my business auto policy?</h3>
+      </div>
+  </div>
+  <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+    That depends. A business auto policy by itself won't extend protection to rented autos unless you have amended it. You can get protection for situations where you rent autos if you add Hired Auto Liability and Physical Damage coverage.
+  </div>
+  <div class="pt-6"></div>
+</a>
 
-<div class="accordion-item-{{ .name }}">
-    <div class="flex justify-between hover:cursor-pointer accordion-title-row">
-        <div class="z-min1">
-        <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance Faqs</h6>
-        <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How often should I review my life insurance policy?</h3>
-        </div>
-    </div>
-    <div class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-{{ .name }}">
-        You should review all of your insurance needs at least once a year. If you have a major life change, you should contact your insurance agent or company representative. The change in your life may have a significant impact on your insurance needs. Life changes may include:
+<a id="life-faq-home" href="#life-faq-home" class="accordion-item-homepage">
+  <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+      <div class="z-min1">
+      <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Life Insurance Faqs</h6>
+      <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">How often should I review my life insurance policy?</h3>
+      </div>
+  </div>
+  <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+    You should review all of your insurance needs at least once a year. If you have a major life change, you should contact your insurance agent or company representative. The change in your life may have a significant impact on your insurance needs. Life changes may include:
         <ul class="pt-5">
           <li>Marriage or divorce</li>
           <li>A child or grandchild who is born or adopted</li>
@@ -43,9 +45,9 @@
           <li>Coming into an inheritance</li>
         </ul>
         <i>Source: Insurance Information Institute www.iii.org</i>
-
-    </div>
-</div>
+  </div>
+  <div class="pt-6"></div>
+</a>
 
 <script>
 function addClass(el, klass_{{ .name | safeJS }}) {

@@ -11,7 +11,7 @@
     {{ .Pre }}
       <span>{{ .Name }}</span><i class="text-2xs pl-1 fas fa-angle-down"></i>
   </a>
-  <ul class="z-50 pt-1 pb-32 {{ .Name | urlize }}-dropdown-selection" role="menu">
+  <ul class="z-50 -mt-1 pt-4 pb-32 {{ .Name | urlize }}-dropdown-selection" role="menu">
     {{ range .Children }}
         {{ if .HasChildren }}
         {{ $dropdownName := .Name }}
@@ -38,8 +38,8 @@
         {{ partial "utilities/dropdownClickScript.html" (dict "context" . "Name" $dropdownName) }}
         {{ end }}
       {{ else }}
-        <div class="w-40 bg-white p-4 leading-tight select-none text-black text-xs text-left">
-            <a href="{{.URL}}" class="text-black text-center menu-item">{{ .Name }}</a>
+        <div class="flex flex-wrap w-40 bg-white p-2 leading-tight select-none text-xs text-left">
+            <a href="{{.URL}}" class="w-full text-black p-2 hover:bg-gray-200 menu-item">{{ .Name }}</a>
         </div>
         {{ end }}
         {{ end }}
