@@ -31,6 +31,12 @@ description = "Whether it’s home or auto, business risk management, or life/he
         url = "/history/"
         weight = 3
         parent = "ourCompany"
+    [[menu.desktop]]
+        identifier = "companiesRepresented"
+        name = "Companies we Represent"
+        url = "/companies-represented/"
+        weight = 4
+        parent = "ourCompany"
 [[menu.desktop]]
     identifier = "ourProducts"
     name = "Our Products"
@@ -68,40 +74,54 @@ description = "Whether it’s home or auto, business risk management, or life/he
 [[menu.mobile]]
     identifier = "ourCompany"
     name = "Our Company"
-    url = "/about-the-company/"
+    url = "#"
     weight = 1
+    post = "hover"
     [[menu.mobile]]
-        identifier = "history"
-        name = "History"
-        url = "/history/"
+        identifier = "ourTeam"
+        name = "Our Team"
+        url = "/team/"
         weight = 1
         parent = "ourCompany"
     [[menu.mobile]]
-        identifier = "team"
-        name = "Team"
-        url = "/team/"
+        identifier = "ourCompany1"
+        name = "Our Company"
+        url = "/about-the-company/"
         weight = 2
+        parent = "ourCompany"
+    [[menu.mobile]]
+        identifier = "ourHistory"
+        name = "Our History"
+        url = "/history/"
+        weight = 3
+        parent = "ourCompany"
+    [[menu.mobile]]
+        identifier = "companiesRepresented"
+        name = "Companies we Represent"
+        url = "/companies-represented/"
+        weight = 4
         parent = "ourCompany"
 [[menu.mobile]]
     identifier = "ourProducts"
-    name = "Products"
-    url = "/our-products/"
+    name = "Our Products"
+    url = "#"
     weight = 2
+    post = "hover"
     [[menu.mobile]]
-        identifier = "personal"
-        name = "Personal"
+        identifier = "personalInsurance"
+        name = "Personal Insurance"
         url = "/products/personal/auto-insurance/"
         weight = 1
         parent = "ourProducts"
     [[menu.mobile]]
-        identifier = "business"
-        name = "Business"
+        identifier = "businessInsurance"
+        name = "Business Insurance"
         url = "/products/business/business-liability/"
         weight = 2
         parent = "ourProducts"
     [[menu.mobile]]
-        identifier = "lifeandhealth"
-        name = "Life / Health"
+        identifier = "lifeInsurance"
+        name = "Life and Health Insurance"
         url = "/products/life-insurance/life-insurance/"
         weight = 3
         parent = "ourProducts"
@@ -116,7 +136,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
     url = "/contact-us/"
     weight = 4
 [[menu.mobile]]
-    identifier = "getQuote"
+    identifier = "quote"
     name = "Get a Quote"
     url = "/quote/"
     weight = 5

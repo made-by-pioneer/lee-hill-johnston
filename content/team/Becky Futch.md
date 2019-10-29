@@ -4,5 +4,5 @@ type = "team"
 title = "Becky Futch"
 team_img = "/pageimg/team/LHJ.BeckyFutch.jpg"
 team_title = "Commercial Lines Customer Service Representative"
-team_group = "Commercial Account Managers"
+team_group = "Commercial Lines Account Managers"
 +++

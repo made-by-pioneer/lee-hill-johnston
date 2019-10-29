@@ -11,6 +11,7 @@ module.exports = {
     'color-11594C': '#11594C',
     'color-262626': '#262626',
     'color-E4E2DD': '#E4E2DD',
+    'color-29584d': '#29584d',
       'blk-overlay': 'rgba(34,34,34,0.3)',
       transparent: 'transparent',
 
@@ -33,6 +34,7 @@ module.exports = {
       px: '1px',
       '0': '0',
       '1': '0.25rem',
+      '1half': '0.40rem',
       '2': '0.5rem',
       '3': '0.75rem',
       '4': '1rem',

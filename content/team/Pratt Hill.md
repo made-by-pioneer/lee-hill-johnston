@@ -4,5 +4,6 @@ type = "team"
 title = "Pratt Hill"
 team_img = "/pageimg/team/LHJ.PrattHill.jpg"
 team_title = "Vice President"
-team_group = "Admin"
+team_group = "Principals"
+weight = 3
 +++

@@ -4,5 +4,5 @@ type = "team"
 title = "Kimberly Howell"
 team_img = "/pageimg/team/LHJ.KimHowell.jpg"
 team_title = "Office Administrator and Commerical Lines Customer Service Representative"
-team_group = "Admin"
+team_group = "Commercial Lines Account Managers"
 +++

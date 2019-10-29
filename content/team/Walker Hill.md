@@ -4,5 +4,5 @@ type = "team"
 title = "Walker Hill"
 team_img = "/pageimg/team/LHJ.WalkerHill.jpg"
 team_title = "Personal Lines Producer"
-team_group = "Personal Account Managers"
+team_group = "Agents"
 +++

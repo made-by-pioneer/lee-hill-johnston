@@ -4,5 +4,6 @@ type = "team"
 title = "Russ Taulbee"
 team_img = "/pageimg/team/LHJ.RussTaulbee.jpg"
 team_title = "Commercial Lines Marketing Manager & Producer"
-team_group = "Commercial Account Managers"
+team_group = "Principals"
+weight = 2
 +++

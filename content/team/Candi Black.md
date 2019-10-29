@@ -4,5 +4,5 @@ type = "team"
 title = "Candi Black"
 team_img = "/pageimg/team/LHJ.CandiBlack.jpg"
 team_title = "Personal Lines Customer Service Representative"
-team_group = "Personal Account Managers"
+team_group = "Personal Lines Account Managers"
 +++
