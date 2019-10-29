@@ -9,6 +9,7 @@ var body = document.querySelector('body');
 
 openmenu.onclick = function() {
   mobilemenu.classList.toggle('mobile-menu-toggle');
+  mobilemenu.classList.toggle('overflow-scroll');
   body.classList.toggle('overflow-hidden');
 }
 
@@ -16,6 +17,7 @@ var closemenu = document.querySelector('.close-menu');
 
 closemenu.onclick = function() {
   mobilemenu.classList.toggle('mobile-menu-toggle');
+  mobilemenu.classList.toggle('overflow-scroll');
   body.classList.toggle('overflow-hidden');
 }
 
