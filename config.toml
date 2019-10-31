@@ -16,25 +16,25 @@ description = "Whether it’s home or auto, business risk management, or life/he
     [[menu.desktop]]
         identifier = "ourTeam"
         name = "Our Team"
-        url = "/team/"
+        url = "/our-team/"
         weight = 1
         parent = "ourCompany"
     [[menu.desktop]]
         identifier = "ourCompany1"
         name = "Our Company"
-        url = "/about-the-company/"
+        url = "/our-company/"
         weight = 2
         parent = "ourCompany"
     [[menu.desktop]]
         identifier = "ourHistory"
         name = "Our History"
-        url = "/history/"
+        url = "/our-history/"
         weight = 3
         parent = "ourCompany"
     [[menu.desktop]]
         identifier = "companiesRepresented"
         name = "Companies we Represent"
-        url = "/companies-represented/"
+        url = "/companies-we-represent/"
         weight = 4
         parent = "ourCompany"
 [[menu.desktop]]
@@ -64,7 +64,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
 [[menu.desktop]]
     identifier = "faqs"
     name = "FAQs"
-    url = "/faqs/"
+    url = "/insurance-faqs/"
     weight = 3
 [[menu.desktop]]
     identifier = "contactUs"
@@ -80,25 +80,25 @@ description = "Whether it’s home or auto, business risk management, or life/he
     [[menu.mobile]]
         identifier = "ourTeam"
         name = "Our Team"
-        url = "/team/"
+        url = "/our-team/"
         weight = 1
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "ourCompany1"
         name = "Our Company"
-        url = "/about-the-company/"
+        url = "/our-company/"
         weight = 2
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "ourHistory"
         name = "Our History"
-        url = "/history/"
+        url = "/our-history/"
         weight = 3
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "companiesRepresented"
         name = "Companies we Represent"
-        url = "/companies-represented/"
+        url = "/companies-we-represent/"
         weight = 4
         parent = "ourCompany"
 [[menu.mobile]]
@@ -128,7 +128,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
 [[menu.mobile]]
     identifier = "faqs"
     name = "FAQs"
-    url = "/faqs/"
+    url = "/insurance-faqs/"
     weight = 3
 [[menu.mobile]]
     identifier = "contactUs"
