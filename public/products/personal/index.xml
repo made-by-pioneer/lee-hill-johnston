@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lee, Hill and Johnston Insurors</title>
+    <link>https://lee-hill-johnston.netlify.com/products/personal/</link>
+    <description>Recent content on Lee, Hill and Johnston Insurors</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lee-hill-johnston.netlify.com/products/personal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Auto Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/products/personal/auto-insurance/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/products/personal/auto-insurance/</guid>
+      <description>Protecting yourself should your vehicle be damaged or stolen is just as important as having insurance for liability. Having auto insurance will insure property damage or injury to others caused by you and other household members as a result of operating a motor vehicle. Other policy features include medical payment reimbursement and reimbursement for injury caused to you by an uninsured or inadequately insured driver.
+There are many special situations where you may need to customize your policy; examples include installation of custom audio equipment, business use of your auto, and teenage and guest drivers, to name a few.</description>
+    </item>
+    
+    <item>
+      <title>Homeowners Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/products/personal/homeowners-insurance/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/products/personal/homeowners-insurance/</guid>
+      <description>Homeowners insurance protects your property—both your house and things in it—from losses due to fire, wind, theft and whole lot more. Homeowners insurance also covers you for property damage or injury to others for which you or other family members may be held legally liable.</description>
+    </item>
+    
+    <item>
+      <title>Umbrella Coverage</title>
+      <link>https://lee-hill-johnston.netlify.com/products/personal/umbrella-coverage/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/products/personal/umbrella-coverage/</guid>
+      <description>Personal umbrella insurance provides extra coverage above the liability coverage in home, auto and other personal insurance policies. Those policies usually carry liability limits of $100,000 or $300,000, but is that enough? Umbrella insurance adds a layer of coverage of $1 million, $2 million or more, and it isn&amp;rsquo;t just for the ultra-wealthy.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,5 +3,15 @@ User-agent: *
 Disallow: /
 
 
+Disallow: /products/business/
+
+Disallow: /products/life-insurance/
+
+Disallow: /products/personal/
+
+Disallow: /products/
+
+Disallow: /thank-you/
+
 
 Sitemap: https://lee-hill-johnston.netlify.com/sitemapindex.xml

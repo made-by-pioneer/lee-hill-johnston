@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lee, Hill and Johnston Insurors</title>
+    <link>https://lee-hill-johnston.netlify.com/products/life-insurance/</link>
+    <description>Recent content on Lee, Hill and Johnston Insurors</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 24 Apr 2019 05:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://lee-hill-johnston.netlify.com/products/life-insurance/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Group Benefits</title>
+      <link>https://lee-hill-johnston.netlify.com/products/life-insurance/group-benefits/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/products/life-insurance/group-benefits/</guid>
+      <description>Life, health, disability, retirement plans&amp;hellip;we have all the options you need to make sure your company&amp;rsquo;s overall compensation plan helps attract and retain the employees you need to give your business a competitive edge.</description>
+    </item>
+    
+    <item>
+      <title>Life Insurance</title>
+      <link>https://lee-hill-johnston.netlify.com/products/life-insurance/life-insurance/</link>
+      <pubDate>Wed, 24 Apr 2019 05:00:00 +0000</pubDate>
+      
+      <guid>https://lee-hill-johnston.netlify.com/products/life-insurance/life-insurance/</guid>
+      <description>Life insurance is an essential part of any financial program. A variety of policies and limits can be used to pay off a mortgage, cover future education expenses, fund a business buy-sell agreement and more. The type of policy and limits you need will depend on your financial goals.</description>
+    </item>
+    
+  </channel>
+</rss>
