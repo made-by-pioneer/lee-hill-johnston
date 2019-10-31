@@ -3,5 +3,5 @@
 
 /products/ /products/personal/auto-insurance/ 301
 /products/personal/ /products/personal/auto-insurance/ 301
-/products/business/ /products/personal/builders-risk/ 301
-/products/life-insurance/ /products/personal/group-benefits/ 301
+/products/business/ /products/business/builders-risk/ 301
+/products/life-insurance/ /products/life-insurance/group-benefits/ 301
