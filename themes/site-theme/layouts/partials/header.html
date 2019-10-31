@@ -248,9 +248,15 @@ form select:focus {
 nav a {
   color: white;
 }
+nav a:hover {
+  color: #222222;
+}
 {{ else }}
 nav a {
   color: #262626;
+}
+nav a:hover {
+  color: #666666;
 }
 {{ end }}
 
@@ -301,7 +307,7 @@ nav a {
     <ul class='w-11/12 mx-auto' role='menu'>
       {{ range .Children }}
       <li>
-        <a href='{{ .URL }}' class='font-calibre text-2xl opacity-75 text-white no-underline menu-item'>{{ .Name }}</a>
+        <a href='{{ .URL }}' class='font-calibre text-2xl font-thin opacity-75 text-white no-underline menu-item'>{{ .Name }}</a>
       </li>
       {{ end }}
     </ul>
