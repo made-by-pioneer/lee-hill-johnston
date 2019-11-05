@@ -5,4 +5,5 @@ title = "Patsy Sye"
 team_img = "/pageimg/team/LHJ.PatsySye.jpg"
 team_title = "Accounting"
 team_group = "Admin"
+weight = 2
 +++

@@ -5,4 +5,5 @@ title = "Amanda Morris"
 team_img = "/pageimg/team/LHJ.AmandaMorris.jpg"
 team_title = "Receptionist"
 team_group = "Admin"
+weight = 1
 +++

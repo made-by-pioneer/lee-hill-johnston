@@ -33,7 +33,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
         parent = "ourCompany"
     [[menu.desktop]]
         identifier = "companiesRepresented"
-        name = "Companies we Represent"
+        name = "Companies We Represent"
         url = "/companies-we-represent/"
         weight = 4
         parent = "ourCompany"
@@ -97,7 +97,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
         parent = "ourCompany"
     [[menu.mobile]]
         identifier = "companiesRepresented"
-        name = "Companies we Represent"
+        name = "Companies We Represent"
         url = "/companies-we-represent/"
         weight = 4
         parent = "ourCompany"
