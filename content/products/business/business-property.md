@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Business Insurance"
 navigation_image = "/pageimg/business-property.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "We take the guesswork out of property insurance"
 extra_content = "Lee, Hill and Johnston Insurors represents several, top rated commercial property insurance companies, so we can review a number of options for your business with different coverage options, limits, deductibles and credits. Contact one of our commercial property agents today and start protecting your business with confidence today."

@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Business Insurance"
 navigation_image = "/pageimg/commercial-auto.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "What does business umbrella insurance cover?"
 extra_content = "Commercial umbrella insurance provides an affordable layer of excess liability insurance for your business above the limits provided by standard business liability policies and could mean the difference between staying in business or becoming a lawsuit casualty in situations like this:"
@@ -17,4 +16,4 @@ extra_title2 = "Essential business insurance"
 extra_content2 = "There are literally dozens and dozens of situations where liability claims can exceed your commercial or professional liability insurance coverage limits. A commercial liability insurance agent at Lee, Hill and Johnston Insurors can help you identify and control those exposures and review coverage options from several top rated insurance companies. Contact us today to get the right protection for your business."
 +++
 
-Builders Risk Insurance covers a building and typically all materials during construction. Protection can be extended for the work of individual contractors, architects, and engineers. Optional coverage can often be added for costs not directly related to construction such as marketing, loss of income, and delayed completion.
+Standard commercial insurance liability limits should be enough to protect your business from most situations where your business is charged with legal liability for injury or property damage. But it won't cover those catastrophic lawsuits and judgements that are increasing in frequency.

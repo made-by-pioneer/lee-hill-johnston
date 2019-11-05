@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Life Insurance"
 navigation_image = "/pageimg/life-insurance.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "What are the different types of life insurance?"
 extra_content = "There are four primary types of life insurance, and each has a place in any sound financial plan. The four variations of life insurance are:"
@@ -19,4 +18,4 @@ extra_title2 = "Essential business insurance"
 extra_content2 = "There are literally dozens and dozens of situations where liability claims can exceed your commercial or professional liability insurance coverage limits. A commercial liability insurance agent at Lee, Hill and Johnston Insurors can help you identify and control those exposures and review coverage options from several top rated insurance companies. Contact us today to get the right protection for your business."
 +++
 
-Life insurance is an essential part of any financial program. A variety of policies and limits can be used to pay off a mortgage, cover future education expenses, fund a business buy-sell agreement and more. The type of policy and limits you need will depend on your financial goals. 
+Life insurance is an essential part of any financial program. A variety of policies and limits can be used to pay off a mortgage, cover future education expenses, fund a business buy-sell agreement and more. The type of policy and limits you need will depend on your financial goals.

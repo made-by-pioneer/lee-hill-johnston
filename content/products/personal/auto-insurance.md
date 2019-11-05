@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Personal Insurance"
 navigation_image = "/pageimg/auto-insurance.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "Auto Insurance Discounts"
 extra_content = "Depending on your policy, you may be eligible for certain discounts, so it is important to review your policy annually with your agent to see if changes in your life mean updates to your policy. If you would like to learn more about available discounts (like going paperless or purchasing a hybrid vehicle), give us a call or scroll down to see each of the companies we represent. Each company is different, but here are just a few examples of typical homeowner discounts:"

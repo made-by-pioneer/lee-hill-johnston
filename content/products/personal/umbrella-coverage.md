@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Personal Insurance"
 navigation_image = "/pageimg/umbrella-coverage.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "Why is umbrella coverage good for me?"
 extra_content = "A short hospital stay can easily exceed $100,000 and long term rehabilitation and loss of income can also get into six-figures quickly. If someone is injured in a car accident and you are at fault, or a guest is injured on your home property, monetary damages can add up quickly. You should think seriously about adding umbrella insurance to your personal insurance coverage if:"

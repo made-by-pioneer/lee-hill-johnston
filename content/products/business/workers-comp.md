@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Business Insurance"
 navigation_image = "/pageimg/workers-comp.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "Does my business require workers comp insurance?"
 extra_content = "Check with a workers comp agent at Lee, Hill and Johnston Insurors to learn if your business is required to carry workers' compensation insurance and let us explore coverage options for you. As an independent insurance agent we represent several top rated work comp insurance companies and can get you the right coverage that fits your business insurance budget."

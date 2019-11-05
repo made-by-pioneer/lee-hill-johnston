@@ -7,7 +7,6 @@ publish_image = "INPUT URL TO PHOTO THAT DESCRIBES THE PAGE"
 meta_description = ""
 insurance_type = "Personal Insurance"
 navigation_image = "/pageimg/homeowners-insurance.jpg"
-companies_represented = ["Auto Owners", "LaGrange", "Company 3", "Company 4"]
 extra_section = true
 extra_title = "Customize your home insurance"
 extra_content = "There are several standard parts of homeowner insurance coverage, but there are even more ways to customize home insurance policies to make sure you get maximum credits and the right insurance coverage for your Georgia home. We can customize your home insurance policy for home business occupancies, special collections, important art or jewelry, and more."
