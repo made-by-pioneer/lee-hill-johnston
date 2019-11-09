@@ -158,7 +158,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
 [params.email]
     email = "example@example.com"
 [params.tracking]
-    google_analytics = ""
+    google_analytics = "UA-121813241-28"
     cloudinaryUrl = ""
 [params.social_links]
     facebook = ""
