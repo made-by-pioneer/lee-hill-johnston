@@ -166,7 +166,7 @@ description = "Whether it’s home or auto, business risk management, or life/he
     linkedin = ""
     pinterest = ""
 [params.publishing_settings]
-    site_in_production = false
+    site_in_production = true
 
 [mediaTypes]
   [mediaTypes."text/noExt"]
