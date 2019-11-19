@@ -23,6 +23,7 @@ sections:
   label: Companies
   create: all
   match: "**/*"
+  exclude: _index
 - type: directory
   path: content/products
   label: Products
