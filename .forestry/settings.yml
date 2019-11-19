@@ -47,6 +47,9 @@ sections:
   label: Team
   create: all
   match: "**/*"
+  new_doc_ext: "**/_index.md"
+  templates:
+  - team-member
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
