@@ -39,6 +39,9 @@ sections:
   label: Faqs
   create: all
   match: "**/*"
+  exclude: "**/_index.md"
+  templates:
+  - faq
 - type: directory
   path: content/team
   label: Team
