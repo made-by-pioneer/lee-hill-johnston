@@ -2,24 +2,29 @@
 label: Team Member
 hide_body: true
 fields:
-- type: datetime
-  name: date
-  label: date
-- type: text
-  name: type
-  label: type
 - type: text
   name: title
-  label: title
+  label: Name
 - type: file
   name: team_img
-  label: team_img
+  label: Headshot
 - type: text
   name: team_title
-  label: team_title
-- type: text
-  name: team_group
-  label: team_group
-- type: number
-  name: weight
-  label: weight
+  label: Job Title
+- name: team_group
+  type: select
+  default: []
+  config:
+    required: false
+    options:
+    - Agents
+    - Admin
+    - Commercial Lines Account Managers
+    - Personal Lines Account Managers
+    - Principals
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Group
