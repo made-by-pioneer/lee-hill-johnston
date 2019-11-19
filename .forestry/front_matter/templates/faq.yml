@@ -4,7 +4,16 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
-- type: text
-  name: faq_type
-  label: faq_type
+  label: Question
+- name: faq_type
+  type: select
+  default: []
+  config:
+    required: false
+    options: []
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type of FAQ
