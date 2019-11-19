@@ -29,6 +29,8 @@ sections:
   label: Products
   create: all
   match: "**/*"
+  templates:
+  - product
 - type: directory
   path: content/faqs
   label: Faqs
