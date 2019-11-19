@@ -16,6 +16,8 @@ sections:
   label: Inner Pages
   create: all
   match: "**/*"
+  templates:
+  - page
 - type: directory
   path: content/companies
   label: Companies
