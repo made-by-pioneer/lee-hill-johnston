@@ -1,0 +1,10 @@
+---
+label: Company
+hide_body: true
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: company_link
+  label: company_link
