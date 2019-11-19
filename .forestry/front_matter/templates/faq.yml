@@ -11,7 +11,10 @@ fields:
   default: []
   config:
     required: false
-    options: []
+    options:
+    - Business Insurance
+    - Life Insurance
+    - Personal Insurance
     source:
       type: simple
       section: 
