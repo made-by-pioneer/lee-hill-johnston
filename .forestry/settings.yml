@@ -29,6 +29,7 @@ sections:
   label: Products
   create: all
   match: "**/*"
+  exclude: content/products/_index.md
   templates:
   - product
 - type: directory
