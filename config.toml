@@ -8,43 +8,43 @@ suffixes = ""
 [[menu.desktop]]
 identifier = "lifeInsurance"
 name = "Life and Health Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/life-insurance/life-insurance/"
 weight = 3
 [[menu.desktop]]
 identifier = "businessInsurance"
 name = "Business Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/business/business-liability/"
 weight = 2
 [[menu.desktop]]
 identifier = "personalInsurance"
 name = "Personal Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/personal/auto-insurance/"
 weight = 1
 [[menu.desktop]]
 identifier = "companiesRepresented"
 name = "Companies We Represent"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/companies-we-represent/"
 weight = 4
 [[menu.desktop]]
 identifier = "ourHistory"
 name = "Our History"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-history/"
 weight = 3
 [[menu.desktop]]
 identifier = "ourCompany1"
 name = "Our Company"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-company/"
 weight = 2
 [[menu.desktop]]
 identifier = "ourTeam"
 name = "Our Team"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-team/"
 weight = 1
 [[menu.desktop]]
@@ -72,43 +72,43 @@ weight = 1
 [[menu.mobile]]
 identifier = "lifeInsurance"
 name = "Life and Health Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/life-insurance/life-insurance/"
 weight = 3
 [[menu.mobile]]
 identifier = "businessInsurance"
 name = "Business Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/business/business-liability/"
 weight = 2
 [[menu.mobile]]
 identifier = "personalInsurance"
 name = "Personal Insurance"
-parent = "Our Products"
+parent = "ourProducts"
 url = "/products/personal/auto-insurance/"
 weight = 1
 [[menu.mobile]]
 identifier = "companiesRepresented"
 name = "Companies We Represent"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/companies-we-represent/"
 weight = 4
 [[menu.mobile]]
 identifier = "ourHistory"
 name = "Our History"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-history/"
 weight = 3
 [[menu.mobile]]
 identifier = "ourCompany1"
 name = "Our Company"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-company/"
 weight = 2
 [[menu.mobile]]
 identifier = "ourTeam"
 name = "Our Team"
-parent = "Our Company"
+parent = "ourCompany"
 url = "/our-team/"
 weight = 1
 [[menu.mobile]]
