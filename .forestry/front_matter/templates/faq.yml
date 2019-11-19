@@ -5,6 +5,7 @@ fields:
 - type: text
   name: title
   label: Question
+  description: Type the answer in the box to the right.
 - name: faq_type
   type: select
   default: []
