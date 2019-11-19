@@ -1,216 +1,206 @@
 baseURL = "https://lee-hill-johnston.netlify.com/"
+enableRobotsTXT = true
 languageCode = "en-us"
 theme = "site-theme"
 title = "Lee, Hill and Johnston Insurors"
-enableRobotsTXT = true
-
+[mediaTypes."text/noExt"]
+suffixes = ""
+[[menu.desktop]]
+identifier = "lifeInsurance"
+name = "Life and Health Insurance"
+parent = "Our Products"
+url = "/products/life-insurance/life-insurance/"
+weight = 3
+[[menu.desktop]]
+identifier = "businessInsurance"
+name = "Business Insurance"
+parent = "Our Products"
+url = "/products/business/business-liability/"
+weight = 2
+[[menu.desktop]]
+identifier = "personalInsurance"
+name = "Personal Insurance"
+parent = "Our Products"
+url = "/products/personal/auto-insurance/"
+weight = 1
+[[menu.desktop]]
+identifier = "companiesRepresented"
+name = "Companies We Represent"
+parent = "Our Company"
+url = "/companies-we-represent/"
+weight = 4
+[[menu.desktop]]
+identifier = "ourHistory"
+name = "Our History"
+parent = "Our Company"
+url = "/our-history/"
+weight = 3
+[[menu.desktop]]
+identifier = "ourCompany1"
+name = "Our Company"
+parent = "Our Company"
+url = "/our-company/"
+weight = 2
+[[menu.desktop]]
+identifier = "ourTeam"
+name = "Our Team"
+parent = "Our Company"
+url = "/our-team/"
+weight = 1
+[[menu.desktop]]
+identifier = "contactUs"
+name = "Contact Us"
+url = "/contact-us/"
+weight = 4
+[[menu.desktop]]
+identifier = "faqs"
+name = "FAQs"
+url = "/insurance-faqs/"
+weight = 3
+[[menu.desktop]]
+identifier = "ourProducts"
+name = "Our Products"
+post = "hover"
+url = "#"
+weight = 2
+[[menu.desktop]]
+identifier = "ourCompany"
+name = "Our Company"
+post = "hover"
+url = "#"
+weight = 1
+[[menu.mobile]]
+identifier = "lifeInsurance"
+name = "Life and Health Insurance"
+parent = "Our Products"
+url = "/products/life-insurance/life-insurance/"
+weight = 3
+[[menu.mobile]]
+identifier = "businessInsurance"
+name = "Business Insurance"
+parent = "Our Products"
+url = "/products/business/business-liability/"
+weight = 2
+[[menu.mobile]]
+identifier = "personalInsurance"
+name = "Personal Insurance"
+parent = "Our Products"
+url = "/products/personal/auto-insurance/"
+weight = 1
+[[menu.mobile]]
+identifier = "companiesRepresented"
+name = "Companies We Represent"
+parent = "Our Company"
+url = "/companies-we-represent/"
+weight = 4
+[[menu.mobile]]
+identifier = "ourHistory"
+name = "Our History"
+parent = "Our Company"
+url = "/our-history/"
+weight = 3
+[[menu.mobile]]
+identifier = "ourCompany1"
+name = "Our Company"
+parent = "Our Company"
+url = "/our-company/"
+weight = 2
+[[menu.mobile]]
+identifier = "ourTeam"
+name = "Our Team"
+parent = "Our Company"
+url = "/our-team/"
+weight = 1
+[[menu.mobile]]
+identifier = "quote"
+name = "Get a Quote"
+url = "/quote/"
+weight = 5
+[[menu.mobile]]
+identifier = "contactUs"
+name = "Contact Us"
+url = "/contact-us/"
+weight = 4
+[[menu.mobile]]
+identifier = "faqs"
+name = "FAQs"
+url = "/insurance-faqs/"
+weight = 3
+[[menu.mobile]]
+identifier = "ourProducts"
+name = "Our Products"
+post = "hover"
+url = "#"
+weight = 2
+[[menu.mobile]]
+identifier = "ourCompany"
+name = "Our Company"
+post = "hover"
+url = "#"
+weight = 1
+[outputFormats.insurance-faqs]
+baseName = "insurance-faqs"
+isPlainText = true
+mediaType = "application/json"
+notAlternative = true
+[outputFormats.redirects]
+baseName = "_redirects"
+isPlainText = true
+mediaType = "text/noExt"
+path = "/"
+[outputFormats.sitemapindex]
+baseName = "sitemapindex"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputFormats.sitepages]
+baseName = "sitepages"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputFormats.siteposts]
+baseName = "siteposts"
+isPlainText = false
+mediaType = "application/xml"
+path = "/"
+[outputs]
+home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "insurance-faqs"]
+[params.Logos]
+dark_logo = "/pageimg/example-logo.png"
+footer_logo = "/pageimg/footer-logo.png"
+logo = "/pageimg/logo.png"
+mobile_logo = "/pageimg/logo.png"
+[params.address]
+city = "Statesboro"
+state = "GA"
+street = "P.O. Box 134"
+zip = 30459
+[params.algolia]
+appId = ""
+index_name = ""
+search_key = ""
+[params.contact_numbers]
+Fax = "555.555.5555"
+Phone = "555.555.5555"
+[params.email]
+email = "example@example.com"
+[params.extra_tools]
+algolia_search = false
+floating_header = false
+font_awesome = true
 [params.meta]
 description = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
-
-[[menu.desktop]]
-    identifier = "ourCompany"
-    name = "Our Company"
-    url = "#"
-    weight = 1
-    post = "hover"
-    [[menu.desktop]]
-        identifier = "ourTeam"
-        name = "Our Team"
-        url = "/our-team/"
-        weight = 1
-        parent = "ourCompany"
-    [[menu.desktop]]
-        identifier = "ourCompany1"
-        name = "Our Company"
-        url = "/our-company/"
-        weight = 2
-        parent = "ourCompany"
-    [[menu.desktop]]
-        identifier = "ourHistory"
-        name = "Our History"
-        url = "/our-history/"
-        weight = 3
-        parent = "ourCompany"
-    [[menu.desktop]]
-        identifier = "companiesRepresented"
-        name = "Companies We Represent"
-        url = "/companies-we-represent/"
-        weight = 4
-        parent = "ourCompany"
-[[menu.desktop]]
-    identifier = "ourProducts"
-    name = "Our Products"
-    url = "#"
-    weight = 2
-    post = "hover"
-    [[menu.desktop]]
-        identifier = "personalInsurance"
-        name = "Personal Insurance"
-        url = "/products/personal/auto-insurance/"
-        weight = 1
-        parent = "ourProducts"
-    [[menu.desktop]]
-        identifier = "businessInsurance"
-        name = "Business Insurance"
-        url = "/products/business/business-liability/"
-        weight = 2
-        parent = "ourProducts"
-    [[menu.desktop]]
-        identifier = "lifeInsurance"
-        name = "Life and Health Insurance"
-        url = "/products/life-insurance/life-insurance/"
-        weight = 3
-        parent = "ourProducts"
-[[menu.desktop]]
-    identifier = "faqs"
-    name = "FAQs"
-    url = "/insurance-faqs/"
-    weight = 3
-[[menu.desktop]]
-    identifier = "contactUs"
-    name = "Contact Us"
-    url = "/contact-us/"
-    weight = 4
-[[menu.mobile]]
-    identifier = "ourCompany"
-    name = "Our Company"
-    url = "#"
-    weight = 1
-    post = "hover"
-    [[menu.mobile]]
-        identifier = "ourTeam"
-        name = "Our Team"
-        url = "/our-team/"
-        weight = 1
-        parent = "ourCompany"
-    [[menu.mobile]]
-        identifier = "ourCompany1"
-        name = "Our Company"
-        url = "/our-company/"
-        weight = 2
-        parent = "ourCompany"
-    [[menu.mobile]]
-        identifier = "ourHistory"
-        name = "Our History"
-        url = "/our-history/"
-        weight = 3
-        parent = "ourCompany"
-    [[menu.mobile]]
-        identifier = "companiesRepresented"
-        name = "Companies We Represent"
-        url = "/companies-we-represent/"
-        weight = 4
-        parent = "ourCompany"
-[[menu.mobile]]
-    identifier = "ourProducts"
-    name = "Our Products"
-    url = "#"
-    weight = 2
-    post = "hover"
-    [[menu.mobile]]
-        identifier = "personalInsurance"
-        name = "Personal Insurance"
-        url = "/products/personal/auto-insurance/"
-        weight = 1
-        parent = "ourProducts"
-    [[menu.mobile]]
-        identifier = "businessInsurance"
-        name = "Business Insurance"
-        url = "/products/business/business-liability/"
-        weight = 2
-        parent = "ourProducts"
-    [[menu.mobile]]
-        identifier = "lifeInsurance"
-        name = "Life and Health Insurance"
-        url = "/products/life-insurance/life-insurance/"
-        weight = 3
-        parent = "ourProducts"
-[[menu.mobile]]
-    identifier = "faqs"
-    name = "FAQs"
-    url = "/insurance-faqs/"
-    weight = 3
-[[menu.mobile]]
-    identifier = "contactUs"
-    name = "Contact Us"
-    url = "/contact-us/"
-    weight = 4
-[[menu.mobile]]
-    identifier = "quote"
-    name = "Get a Quote"
-    url = "/quote/"
-    weight = 5
-[params.contact_numbers]
-    Fax = "555.555.5555"
-    Phone = "555.555.5555"
-[params.Logos]
-    dark_logo = "/pageimg/example-logo.png"
-    logo = "/pageimg/logo.png"
-    footer_logo = "/pageimg/footer-logo.png"
-    mobile_logo = "/pageimg/logo.png"
-[params.utility_images]
-    thank_you_background = "/pageimg/thank-you-contact.jpg"
-[params.address]
-    city = "Statesboro"
-    state = "GA"
-    street = "P.O. Box 134"
-    zip = 30459
-[params.email]
-    email = "example@example.com"
-[params.tracking]
-    google_analytics = "UA-121813241-28"
-    cloudinaryUrl = ""
-[params.social_links]
-    facebook = ""
-    insta = ""
-    linkedin = ""
-    pinterest = ""
 [params.publishing_settings]
-    site_in_production = true
-
-[mediaTypes]
-  [mediaTypes."text/noExt"]
-    suffixes = ""
-
+site_in_production = true
+[params.social_links]
+facebook = ""
+insta = ""
+linkedin = ""
+pinterest = ""
+[params.tracking]
+cloudinaryUrl = ""
+google_analytics = "UA-121813241-28"
+[params.utility_images]
+thank_you_background = "/pageimg/thank-you-contact.jpg"
 [sitemap]
-    filename = "sitepages.xml"
-
-[outputFormats]
-    [outputFormats.sitemapindex]
-        baseName = "sitemapindex"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-    [outputFormats.sitepages]
-        baseName = "sitepages"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-    [outputFormats.siteposts]
-        baseName = "siteposts"
-        isPlainText = false
-        mediaType = "application/xml"
-        path = "/"
-    [outputFormats.redirects]
-        baseName = "_redirects"
-        isPlainText = true
-        mediaType = "text/noExt"
-        path = "/"
-    [outputFormats.insurance-faqs]
-        baseName = "insurance-faqs"
-        isPlainText = true
-        mediaType = "application/json"
-        notAlternative = true
-
-[outputs]
-  home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "insurance-faqs"]
-
-[params.algolia]
-    appId = ""
-    search_key = ""
-    index_name = ""
-
-[params.extra_tools]
-    algolia_search = false
-    font_awesome = true
-    floating_header = false
+filename = "sitepages.xml"
