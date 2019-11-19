@@ -4,7 +4,7 @@ hide_body: true
 fields:
 - type: text
   name: title
-  label: title
+  label: Company Name
 - type: text
   name: company_link
-  label: company_link
+  label: Link to the company's website
