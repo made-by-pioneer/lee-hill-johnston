@@ -6,65 +6,65 @@ title = "Lee, Hill and Johnston Insurors"
 [mediaTypes."text/noExt"]
 suffixes = ""
 [[menu.desktop]]
-identifier = "lifeInsurance"
+identifier = "Life and Health Insurance"
 name = "Life and Health Insurance"
-parent = "ourProducts"
+parent = "Our Products"
 url = "/products/life-insurance/life-insurance/"
 weight = 3
 [[menu.desktop]]
-identifier = "businessInsurance"
+identifier = "Business Insurance"
 name = "Business Insurance"
-parent = "ourProducts"
+parent = "Our Products"
 url = "/products/business/business-liability/"
 weight = 2
 [[menu.desktop]]
-identifier = "personalInsurance"
+identifier = "Personal Insurance"
 name = "Personal Insurance"
-parent = "ourProducts"
+parent = "Our Products"
 url = "/products/personal/auto-insurance/"
 weight = 1
 [[menu.desktop]]
-identifier = "companiesRepresented"
+identifier = "Companies We Represent"
 name = "Companies We Represent"
-parent = "ourCompany"
+parent = "Our Company"
 url = "/companies-we-represent/"
 weight = 4
 [[menu.desktop]]
-identifier = "ourHistory"
+identifier = "Our History"
 name = "Our History"
-parent = "ourCompany"
+parent = "Our Company"
 url = "/our-history/"
 weight = 3
 [[menu.desktop]]
-identifier = "ourCompany1"
+identifier = "Our Company 1"
 name = "Our Company"
-parent = "ourCompany"
+parent = "Our Company"
 url = "/our-company/"
 weight = 2
 [[menu.desktop]]
-identifier = "ourTeam"
+identifier = "Our Team"
 name = "Our Team"
-parent = "ourCompany"
+parent = "Our Company"
 url = "/our-team/"
 weight = 1
 [[menu.desktop]]
-identifier = "contactUs"
+identifier = "Contact Us"
 name = "Contact Us"
 url = "/contact-us/"
 weight = 4
 [[menu.desktop]]
-identifier = "faqs"
+identifier = "FAQs"
 name = "FAQs"
 url = "/insurance-faqs/"
 weight = 3
 [[menu.desktop]]
-identifier = "ourProducts"
+identifier = "Our Products"
 name = "Our Products"
 post = "hover"
 url = "#"
 weight = 2
 [[menu.desktop]]
-identifier = "ourCompany"
+identifier = "Our Company"
 name = "Our Company"
 post = "hover"
 url = "#"
