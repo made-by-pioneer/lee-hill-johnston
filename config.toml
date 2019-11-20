@@ -166,8 +166,7 @@ path = "/"
 [outputs]
 home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "insurance-faqs"]
 [params.Logos]
-dark_logo = "/pageimg/example-logo.png"
-footer_logo = "/pageimg/footer-logo.png"
+footer_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219393/Lee%2C%20Hill%20and%20Johnston/footer-logo_wq4aef.png"
 logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
 mobile_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
 [params.address]
