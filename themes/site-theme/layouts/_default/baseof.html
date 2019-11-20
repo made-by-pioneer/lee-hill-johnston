@@ -10,7 +10,6 @@
         {{ partial "head/faviCode.html" . }}
         {{ partial "head/globalStyle.html" . }}
         {{ partial "head/rss.html" . }}
-        {{ partial "head/fontAwesome.html" . }}
         {{ partial "head/googleAnalytics.html" . }}
     </head>
 
@@ -25,6 +24,8 @@
 </main>
 
 {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+
+{{ partial "head/fontAwesome.html" . }}
 
 {{ block "scripts" . }}{{ partial "siteScripts.html" . }}{{ end }}
 

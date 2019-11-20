@@ -168,8 +168,8 @@ home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "i
 [params.Logos]
 dark_logo = "/pageimg/example-logo.png"
 footer_logo = "/pageimg/footer-logo.png"
-logo = "/pageimg/logo.png"
-mobile_logo = "/pageimg/logo.png"
+logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
+mobile_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
 [params.address]
 city = "Statesboro"
 state = "GA"
