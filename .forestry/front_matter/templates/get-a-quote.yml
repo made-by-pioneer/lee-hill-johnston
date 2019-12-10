@@ -36,3 +36,5 @@ fields:
   name: meta_description
   label: Meta Description
   description: This will be visible on the front and backend.
+pages:
+- content/pages/quote.md
