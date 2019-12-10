@@ -53,7 +53,7 @@ sections:
   new_doc_ext: _index.md
   templates:
   - team-member
-upload_dir: Lee Hill and Johnston
+upload_dir: Lee, Hill and Johnston
 public_path: ''
 front_matter_path: ''
 use_front_matter_path: 
