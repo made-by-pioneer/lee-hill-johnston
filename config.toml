@@ -177,7 +177,6 @@ font_awesome = true
 site_in_production = true
 [params.tracking]
 cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"
-google_analytics = "UA-121813241-28"
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
 [sitemap]
