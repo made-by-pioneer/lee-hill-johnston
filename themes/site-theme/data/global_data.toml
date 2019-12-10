@@ -1,0 +1,15 @@
+[logos]
+footer_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219393/Lee%2C%20Hill%20and%20Johnston/footer-logo_wq4aef.png"
+logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
+mobile_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
+[contact_numbers]
+phone = "(912) 764-9896"
+[params.email]
+email = "example@example.com"
+[meta]
+description = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
+[social]
+facebook = "https://www.facebook.com/LeeHillandJohnstonInsurors/"
+instagram = "https://www.instagram.com/leehilljohnstoninsurors/"
+[tracking]
+google_analytics = "UA-121813241-28"

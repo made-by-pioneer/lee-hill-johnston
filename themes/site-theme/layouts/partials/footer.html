@@ -7,7 +7,7 @@
 <footer class="flex flex-wrap items-start pt-16 pb-3 px-8 lg:px-32">
   <div class="flex flex-wrap items-start max-w-8xl mx-auto">
     <div class="w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0">
-      <img class="w-40" src="{{ .Site.Params.logos.footer_logo }}">
+      <img class="w-40" src="{{ .Site.Data.global_data.logos.footer_logo }}">
     </div>
     <div class="flex flex-wrap w-full sm:w-1/3 lg:w-1/5 pb-12 lg:pb-0 sm:px-5">
       <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Site Navigation</h6>
@@ -107,7 +107,7 @@
           </div>
         </div>
         <div class="w-full lg:w-1/3 text-center pb-8 lg:pb-0 opacity-50">
-          <p class="font-calibre text-xs text-color-333333">Follow us on <a href="https://www.facebook.com/LeeHillandJohnstonInsurors/"><i class="text-sm px-1 fab fa-facebook-square"></i> <span class="pr-1">Facebook</span></a> and <a href="https://www.instagram.com/leehilljohnstoninsurors/"><i class="text-sm pl-2 pr-1 fab fa-instagram"></i> Instagram</a></p>
+          <p class="font-calibre text-xs text-color-333333">Follow us on <a href="{{ .Site.Data.global_data.social.facebook }}"><i class="text-sm px-1 fab fa-facebook-square"></i> <span class="pr-1">Facebook</span></a> and <a href="{{ .Site.Data.global_data.social.instagram }}"><i class="text-sm pl-2 pr-1 fab fa-instagram"></i> Instagram</a></p>
         </div>
       </div>
     </div>

@@ -165,39 +165,18 @@ mediaType = "application/xml"
 path = "/"
 [outputs]
 home = ["HTML", "sitemapindex", "sitepages", "siteposts", "RSS", "redirects", "insurance-faqs"]
-[params.Logos]
-footer_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219393/Lee%2C%20Hill%20and%20Johnston/footer-logo_wq4aef.png"
-logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
-mobile_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
-[params.address]
-city = "Statesboro"
-state = "GA"
-street = "P.O. Box 134"
-zip = 30459
 [params.algolia]
 appId = ""
 index_name = ""
 search_key = ""
-[params.contact_numbers]
-Fax = "555.555.5555"
-Phone = "555.555.5555"
-[params.email]
-email = "example@example.com"
 [params.extra_tools]
 algolia_search = false
 floating_header = false
 font_awesome = true
-[params.meta]
-description = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
 [params.publishing_settings]
 site_in_production = true
-[params.social_links]
-facebook = ""
-insta = ""
-linkedin = ""
-pinterest = ""
 [params.tracking]
-cloudinaryUrl = ""
+cloudinary_url = "https://res.cloudinary.com/pioneer-design/image/upload"
 google_analytics = "UA-121813241-28"
 [params.utility_images]
 thank_you_background = "/pageimg/thank-you-contact.jpg"
