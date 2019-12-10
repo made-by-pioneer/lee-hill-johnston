@@ -1,0 +1,201 @@
+---
+label: Homepage
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: layout
+  label: layout
+- type: textarea
+  name: meta_description
+  label: meta_description
+- type: text
+  name: page_status
+  label: page_status
+- type: file
+  name: publish_image
+  label: publish_image
+- type: text
+  name: title
+  label: title
+- type: text
+  name: type
+  label: type
+- type: text
+  name: url
+  label: url
+- type: field_group
+  name: hero_section
+  label: hero_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: before_slider_section
+  label: before_slider_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+- type: field_group
+  name: slider
+  label: slider
+  fields:
+  - type: field_group
+    name: first_slide
+    label: first_slide
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: text
+      name: button_text
+      label: button_text
+    - type: text
+      name: button_link
+      label: button_link
+    - type: file
+      name: image
+      label: image
+  - type: field_group
+    name: second_slide
+    label: second_slide
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: text
+      name: button_text
+      label: button_text
+    - type: text
+      name: button_link
+      label: button_link
+    - type: file
+      name: image
+      label: image
+  - type: field_group
+    name: third_slide
+    label: third_slide
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: text
+      name: button_text
+      label: button_text
+    - type: text
+      name: button_link
+      label: button_link
+    - type: file
+      name: image
+      label: image
+- type: field_group
+  name: faq_accordion_section
+  label: faq_accordion_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: field_group
+    name: first_question
+    label: first_question
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: textarea
+      name: text
+      label: text
+  - type: field_group
+    name: second_question
+    label: second_question
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: textarea
+      name: text
+      label: text
+  - type: field_group
+    name: third_question
+    label: third_question
+    fields:
+    - type: text
+      name: title
+      label: title
+    - type: text
+      name: subtitle
+      label: subtitle
+    - type: textarea
+      name: text
+      label: text
+    - type: list
+      name: list_items
+      label: list_items
+    - type: text
+      name: extra_text
+      label: extra_text
+- type: field_group
+  name: before_footer_section
+  label: before_footer_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: text
+    label: text
+  - type: text
+    name: button_text
+    label: button_text
+  - type: text
+    name: button_link
+    label: button_link
+  - type: file
+    name: image
+    label: image
