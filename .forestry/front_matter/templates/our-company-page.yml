@@ -39,3 +39,5 @@ fields:
 - type: file
   name: company_group_image
   label: Company Group Image
+pages:
+- content/pages/company.md
