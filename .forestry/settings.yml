@@ -53,10 +53,10 @@ sections:
   new_doc_ext: _index.md
   templates:
   - team-member
-upload_dir: static/pageimg
-public_path: "/pageimg"
+upload_dir: Lee Hill and Johnston
+public_path: ''
 front_matter_path: ''
-use_front_matter_path: false
+use_front_matter_path: 
 file_template: ":filename:"
 build:
   preview_env:
