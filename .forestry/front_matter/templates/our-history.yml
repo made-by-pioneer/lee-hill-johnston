@@ -95,3 +95,5 @@ fields:
       name: event
       label: event
   description: Entries are listed top to bottom.
+pages:
+- content/pages/history.md
