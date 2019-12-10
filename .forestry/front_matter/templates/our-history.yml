@@ -1,0 +1,85 @@
+---
+label: Our History
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: url
+  label: url
+- type: text
+  name: title
+  label: title
+- type: text
+  name: page_status
+  label: page_status
+- type: text
+  name: publish_image
+  label: publish_image
+- type: textarea
+  name: meta_description
+  label: meta_description
+- type: text
+  name: video
+  label: video
+- type: field_group
+  name: timeline
+  label: timeline
+  fields:
+  - type: field_group
+    name: first_entry
+    label: first_entry
+    fields:
+    - type: text
+      name: year
+      label: year
+    - type: text
+      name: event
+      label: event
+  - type: field_group
+    name: second_entry
+    label: second_entry
+    fields:
+    - type: text
+      name: year
+      label: year
+    - type: text
+      name: event
+      label: event
+  - type: field_group
+    name: third_entry
+    label: third_entry
+    fields:
+    - type: text
+      name: year
+      label: year
+    - type: text
+      name: event
+      label: event
+  - type: field_group
+    name: fourth_entry
+    label: fourth_entry
+    fields:
+    - type: text
+      name: year
+      label: year
+    - type: text
+      name: event
+      label: event
+  - type: field_group
+    name: fifth_entry
+    label: fifth_entry
+    fields:
+    - type: text
+      name: year
+      label: year
+    - type: text
+      name: event
+      label: event
