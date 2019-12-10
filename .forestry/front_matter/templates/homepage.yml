@@ -5,30 +5,37 @@ fields:
 - type: datetime
   name: date
   label: date
+  hidden: true
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: textarea
   name: meta_description
-  label: meta_description
+  label: Meta Description
 - type: text
   name: page_status
   label: page_status
+  hidden: true
 - type: file
   name: publish_image
   label: publish_image
+  hidden: true
 - type: text
   name: title
   label: title
+  hidden: true
 - type: text
   name: type
   label: type
+  hidden: true
 - type: text
   name: url
   label: url
+  hidden: true
 - type: field_group
   name: hero_section
-  label: hero_section
+  label: Hero Section
   fields:
   - type: text
     name: title
@@ -41,13 +48,14 @@ fields:
     label: text
   - type: text
     name: button_text
-    label: button_text
+    label: button text
   - type: file
     name: image
     label: image
+  description: This section's button will always call the company's number when clicked.
 - type: field_group
   name: before_slider_section
-  label: before_slider_section
+  label: before slider section
   fields:
   - type: text
     name: title
@@ -61,7 +69,7 @@ fields:
   fields:
   - type: field_group
     name: first_slide
-    label: first_slide
+    label: first slide
     fields:
     - type: text
       name: title
@@ -71,16 +79,16 @@ fields:
       label: subtitle
     - type: text
       name: button_text
-      label: button_text
+      label: button text
     - type: text
       name: button_link
-      label: button_link
+      label: button link
     - type: file
       name: image
       label: image
   - type: field_group
     name: second_slide
-    label: second_slide
+    label: second slide
     fields:
     - type: text
       name: title
@@ -90,16 +98,16 @@ fields:
       label: subtitle
     - type: text
       name: button_text
-      label: button_text
+      label: button text
     - type: text
       name: button_link
-      label: button_link
+      label: button link
     - type: file
       name: image
       label: image
   - type: field_group
     name: third_slide
-    label: third_slide
+    label: third slide
     fields:
     - type: text
       name: title
@@ -109,16 +117,17 @@ fields:
       label: subtitle
     - type: text
       name: button_text
-      label: button_text
+      label: button text
     - type: text
       name: button_link
-      label: button_link
+      label: button link
     - type: file
       name: image
       label: image
+  description: Slides are listed right to left.
 - type: field_group
   name: faq_accordion_section
-  label: faq_accordion_section
+  label: faq accordion section
   fields:
   - type: text
     name: title
@@ -128,13 +137,13 @@ fields:
     label: text
   - type: text
     name: button_text
-    label: button_text
+    label: button text
   - type: text
     name: button_link
-    label: button_link
+    label: button link
   - type: field_group
     name: first_question
-    label: first_question
+    label: first question
     fields:
     - type: text
       name: title
@@ -147,7 +156,7 @@ fields:
       label: text
   - type: field_group
     name: second_question
-    label: second_question
+    label: second question
     fields:
     - type: text
       name: title
@@ -160,7 +169,7 @@ fields:
       label: text
   - type: field_group
     name: third_question
-    label: third_question
+    label: third question
     fields:
     - type: text
       name: title
@@ -173,13 +182,16 @@ fields:
       label: text
     - type: list
       name: list_items
-      label: list_items
+      label: list items
+      description: This list can be left empty if needed.
     - type: text
       name: extra_text
-      label: extra_text
+      label: extra text
+      description: This box can be left empty if needed.
+  description: Questions are listed top to bottom.
 - type: field_group
   name: before_footer_section
-  label: before_footer_section
+  label: before footer section
   fields:
   - type: text
     name: title
@@ -192,10 +204,10 @@ fields:
     label: text
   - type: text
     name: button_text
-    label: button_text
+    label: button text
   - type: text
     name: button_link
-    label: button_link
+    label: button link
   - type: file
     name: image
     label: image
