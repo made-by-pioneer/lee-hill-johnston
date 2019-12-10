@@ -5,37 +5,48 @@ fields:
 - type: datetime
   name: date
   label: date
+  hidden: true
 - type: text
   name: type
   label: type
+  hidden: true
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: url
   label: url
+  hidden: true
 - type: text
   name: title
   label: title
+  description: This will be visible on the front and backend. MUST BE SET.
+  config:
+    required: true
 - type: text
   name: page_status
   label: page_status
+  hidden: true
 - type: text
   name: publish_image
   label: publish_image
+  hidden: true
 - type: textarea
   name: meta_description
-  label: meta_description
+  label: Meta Description
+  description: This will be visible on the front and backend.
 - type: text
   name: video
   label: video
+  description: This video MUST be a Youtube embed link.
 - type: field_group
   name: timeline
   label: timeline
   fields:
   - type: field_group
     name: first_entry
-    label: first_entry
+    label: first entry
     fields:
     - type: text
       name: year
@@ -45,7 +56,7 @@ fields:
       label: event
   - type: field_group
     name: second_entry
-    label: second_entry
+    label: second entry
     fields:
     - type: text
       name: year
@@ -55,7 +66,7 @@ fields:
       label: event
   - type: field_group
     name: third_entry
-    label: third_entry
+    label: third entry
     fields:
     - type: text
       name: year
@@ -65,7 +76,7 @@ fields:
       label: event
   - type: field_group
     name: fourth_entry
-    label: fourth_entry
+    label: fourth entry
     fields:
     - type: text
       name: year
@@ -75,7 +86,7 @@ fields:
       label: event
   - type: field_group
     name: fifth_entry
-    label: fifth_entry
+    label: fifth entry
     fields:
     - type: text
       name: year
@@ -83,3 +94,4 @@ fields:
     - type: text
       name: event
       label: event
+  description: Entries are listed top to bottom.
