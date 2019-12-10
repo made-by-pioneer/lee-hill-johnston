@@ -2,7 +2,7 @@
 
 <style>
 .select-navigation {
-    background-image: url("{{ .Params.navigation_image }}")
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.navigation_image }}")
 }
 .inner-section-content p {
     padding-bottom: 40px;

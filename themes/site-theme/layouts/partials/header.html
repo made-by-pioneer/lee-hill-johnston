@@ -49,10 +49,10 @@ form select:focus {
   border-color: #11594C !important;
 }
 .collage-image {
-    background-image: url("/pageimg/about-lee-hill-johnston.png");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Data.global_data.collage.image }}");
 }
 .select-navigation {
-    background-image: url("/pageimg/About Us Image.jpg");
+    background-image: url("/v1574219399/Lee%2C%20Hill%20and%20Johnston/About_Us_Image_pzofqw.jpg");
 }
 
 .green-button {
@@ -92,7 +92,7 @@ form select:focus {
 }
 
 .about-us-image {
-    background-image: url("https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219399/Lee%2C%20Hill%20and%20Johnston/About_Us_Image_pzofqw.jpg");
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219399/Lee%2C%20Hill%20and%20Johnston/About_Us_Image_pzofqw.jpg");
 }
 
 .tns-nav {
