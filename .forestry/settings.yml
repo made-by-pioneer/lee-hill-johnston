@@ -12,8 +12,6 @@ sections:
   label: Home Page
   create: all
   match: "*"
-  templates:
-  - page
 - type: directory
   path: content/pages
   label: Inner Pages
