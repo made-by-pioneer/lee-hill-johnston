@@ -5,27 +5,37 @@ fields:
 - type: datetime
   name: date
   label: date
+  hidden: true
 - type: text
   name: type
   label: type
+  hidden: true
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: text
   name: url
   label: url
+  hidden: true
 - type: text
   name: title
   label: title
+  description: This will be visible on the front and backend. MUST BE SET.
+  config:
+    required: true
 - type: text
   name: page_status
   label: page_status
+  hidden: true
 - type: file
   name: publish_image
   label: publish_image
+  hidden: true
 - type: textarea
   name: meta_description
-  label: meta_description
+  label: Meta Description
+  description: This will be visible on the front and backend.
 - type: file
   name: company_group_image
-  label: company_group_image
+  label: Company Group Image
