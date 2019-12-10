@@ -1,23 +1,23 @@
+[collage]
+image = "/v1574219399/Lee%2C%20Hill%20and%20Johnston/about-lee-hill-johnston_okd1gv.png"
+subtitle = "YOUR TRUSTED ADVISOR"
+text = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
+title = "Why Lee, Hill and Johnston?"
+[contact_numbers]
+phone = "(912) 764-9896"
 [logos]
 footer_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219393/Lee%2C%20Hill%20and%20Johnston/footer-logo_wq4aef.png"
 logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
 mobile_logo = "https://res.cloudinary.com/pioneer-design/image/upload/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/logo_qnvgzx.png"
-[contact_numbers]
-phone = "(912) 764-9896"
-[params.email]
-email = "example@example.com"
 [meta]
 description = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
+[params.email]
+email = "example@example.com"
 [social]
 facebook = "https://www.facebook.com/LeeHillandJohnstonInsurors/"
 instagram = "https://www.instagram.com/leehilljohnstoninsurors/"
+[team_section]
+text = "We’re your neighbors, your friends, and your local insurance professionals. We’re dedicated to researching the best coverage options for you and committed to tailoring them to your specific auto insurance, home insurance, or business insurance needs. Behind every great company is a great team. Meet ours."
+title = "Our Team"
 [tracking]
 google_analytics = "UA-121813241-28"
-[collage]
-title = "Why Lee, Hill and Johnston?"
-subtitle = "YOUR TRUSTED ADVISOR"
-text = "Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you."
-image = "/v1574219399/Lee%2C%20Hill%20and%20Johnston/about-lee-hill-johnston_okd1gv.png"
-[team_section]
-title = "Our Team"
-text = "We’re your neighbors, your friends, and your local insurance professionals. We’re dedicated to researching the best coverage options for you and committed to tailoring them to your specific auto insurance, home insurance, or business insurance needs. Behind every great company is a great team. Meet ours."

@@ -84,3 +84,5 @@ fields:
   - type: textarea
     name: text
     label: text
+pages:
+- themes/site-theme/data/global_data.toml
