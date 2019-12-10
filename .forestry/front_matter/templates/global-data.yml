@@ -1,0 +1,85 @@
+---
+label: Global Data
+hide_body: true
+fields:
+- type: field_group
+  name: logos
+  label: logos
+  fields:
+  - type: file
+    name: footer_logo
+    label: footer_logo
+  - type: file
+    name: logo
+    label: logo
+  - type: file
+    name: mobile_logo
+    label: mobile_logo
+- type: field_group
+  name: contact_numbers
+  label: contact_numbers
+  fields:
+  - type: text
+    name: phone
+    label: phone
+- type: field_group
+  name: params
+  label: params
+  fields:
+  - type: field_group
+    name: email
+    label: email
+    fields:
+    - type: text
+      name: email
+      label: email
+- type: field_group
+  name: meta
+  label: meta
+  fields:
+  - type: textarea
+    name: description
+    label: description
+- type: field_group
+  name: social
+  label: social
+  fields:
+  - type: text
+    name: facebook
+    label: facebook
+  - type: text
+    name: instagram
+    label: instagram
+- type: field_group
+  name: tracking
+  label: tracking
+  fields:
+  - type: text
+    name: google_analytics
+    label: google_analytics
+- type: field_group
+  name: collage
+  label: collage
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: text
+    name: subtitle
+    label: subtitle
+  - type: textarea
+    name: text
+    label: text
+  - type: file
+    name: image
+    label: image
+- type: field_group
+  name: team_section
+  label: team_section
+  fields:
+  - type: text
+    name: title
+    label: title
+  - type: textarea
+    name: text
+    label: text
