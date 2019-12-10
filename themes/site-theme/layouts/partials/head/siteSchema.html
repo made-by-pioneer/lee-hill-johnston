@@ -16,7 +16,7 @@
   {{ with .Site.Params.image -}}
   "image": "{{ .url | absURL }}",
   {{- end }}
-  "thumbnailUrl": "{{ if .Site.Params.tracking.cloudinary_url }}{{ .Site.Params.tracking.cloudinary_url }}{{ else }}{{ .Site.BaseURL }}{{ end }}{{ .Site.Data.global_data.logos.logo }}",
+  "thumbnailUrl": "{{ .Site.Data.global_data.logos.logo }}",
   "name": "{{ .Site.Title }}"
 }
 </script>
@@ -59,7 +59,7 @@
     "name": "{{ .Site.Title }}",
     "logo": {
       "@type": "ImageObject",
-      "url": "{{ if .Site.Params.tracking.cloudinary_url }}{{ .Site.Params.tracking.cloudinary_url }}{{ else }}{{ .Site.BaseURL }}{{ end }}{{ .Site.Data.global_data.logos.logo }}"
+      "url": "{{ .Site.Data.global_data.logos.logo }}"
     }
   },
   {{ if .Params.author -}}

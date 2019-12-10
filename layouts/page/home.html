@@ -12,22 +12,6 @@
     transition: 1s;
 }
 
-.services-img-1 {
-    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/life-insurance-slider_fmgi9n.jpg");
-}
-
-.services-img-2 {
-    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219394/Lee%2C%20Hill%20and%20Johnston/insuring-home-boat_ddrnpn.jpg");
-}
-
-.services-img-3 {
-    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219392/Lee%2C%20Hill%20and%20Johnston/business-insurance-slider_othy44.jpg");
-}
-
-.home-hero-image {
-    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto/v1574219394/Lee%2C%20Hill%20and%20Johnston/lee-hill-johnson_kpbpqc.jpg");
-}
-
 @media screen and (min-width:1200px) {
     .hero-img {
     width: 780px;
@@ -37,14 +21,20 @@
 
 </style>
 
+<style>
+.home-hero-image {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.hero_section.image }}");
+}
+</style>
+
 <section class="flex flex-wrap bg-color-00594D pt-24 pb-24 lg:pb-12 xl:pb-12 -mt-48 z-0">
     <div class="flex flex-wrap max-w-8xl mx-auto">
         <div class="w-5/6 lg:w-1/2 xl:w-5/12 mx-auto pt-40 lg:pl-12 xl:pl-20 xxl:pl-32 lg:pr-20 z-0">
-            <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">YOUR TRUSTED ADVISOR</h6>
-            <h1 class="font-canela text-4xl md:text-5xl text-white leading-tight pb-3">We have your trust, insured.</h1>
-            <p class="font-calibre text-lg md:text-2xl font-thin text-white leading-snug pb-8">Whether it’s home or auto, business risk management, or life/health insurance, we’ve built a reputation over the past 50 years for insuring the trust of thousands across the Southeast. Let us do the same for you.</p>
+            <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.hero_section.subtitle }}</h6>
+            <h1 class="font-canela text-4xl md:text-5xl text-white leading-tight pb-3">{{ .Page.Params.hero_section.title }}</h1>
+            <p class="font-calibre text-lg md:text-2xl font-thin text-white leading-snug pb-8">{{ .Page.Params.hero_section.text }}</p>
             <a href="tel:{{ .Site.Data.global_data.contact_numbers.phone }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-                <span class="font-calibre-bold text-base text-white brown-button-text">Call us today!</span>
+                <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.hero_section.button_text }}</span>
             </a>
         </div>
         <div class="flex flex-wrap w-5/6 lg:w-1/2 xl:w-7/12 bg-cover lg:bg-contain bg-no-repeat mt-20 lg:pr-12 xl:pr-20 mx-auto pl-0 -mb-24 home-hero-image">
@@ -55,20 +45,34 @@
 
 <section class="flex flex-wrap max-w-8xl mx-auto pt-20 lg:pt-40 pb-16">
     <div class="w-5/6 lg:w-1/2 mx-auto text-center">
-        <h2 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">Independence feels good.</h2>
-        <p class="font-calibre text-base md:text-2xl text-color-262626">For nearly 60 years, we’ve been insuring the trust of people in Statesboro, Bulloch County, and the surrounding Southeast areas. As an independent insurance agency, we can offer the best personal, business, life and health insurance options on the market.</p>
+        <h2 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">{{ .Page.Params.before_slider_section.title }}</h2>
+        <p class="font-calibre text-base md:text-2xl text-color-262626">{{ .Page.Params.before_slider_section.text }}</p>
     </div>
 </section>
+
+<style>
+.services-img-1 {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.slider.first_slide.image }}");
+}
+
+.services-img-2 {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.slider.second_slide.image }}");
+}
+
+.services-img-3 {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.slider.third_slide.image }}");
+}
+</style>
 
 <section id="services-slider" class="flex flex-wrap max-w-8xl mx-auto pb-48 services-slider">
     <div id="services-slider-items" class="flex flex-wrap">
     <div class="flex flex-wrap py-12">
         <div class="flex flex-wrap w-11/12 bg-white mx-auto shadow-xl">
             <div class="w-full lg:w-2/3 p-12">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Life & Health Insurance</h6>
-                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">Insuring you with term life and health insurance</h3>
-                <a href="/products/life-insurance/life-insurance/" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-                    <span class="font-calibre-bold text-base text-white brown-button-text">View your options</span>
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.slider.first_slide.subtitle }}</h6>
+                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">{{ .Page.Params.slider.first_slide.title }}</h3>
+                <a href="{{ .Page.Params.slider.first_slide.button_link }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+                    <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.slider.first_slide.button_text }}</span>
                 </a>
             </div>
             <div class="w-full lg:w-1/3 bg-cover bg-center services-img-1">
@@ -79,10 +83,10 @@
     <div class="flex flex-wrap py-12">
         <div class="flex flex-wrap w-11/12 bg-white mx-auto shadow-xl">
             <div class="w-full lg:w-2/3 p-12">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Personal Insurance</h6>
-                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">Insuring your auto, home, condo, boat and more.</h3>
-                <a href="/products/personal/auto-insurance/" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-                    <span class="font-calibre-bold text-base text-white brown-button-text">View your options</span>
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.slider.second_slide.subtitle }}</h6>
+                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">{{ .Page.Params.slider.second_slide.title }}</h3>
+                <a href="{{ .Page.Params.slider.second_slide.button_link }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+                    <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.slider.second_slide.button_text }}</span>
                 </a>
             </div>
             <div class="w-full lg:w-1/3 bg-cover bg-center services-img-2">
@@ -93,10 +97,10 @@
     <div class="flex flex-wrap py-12">
         <div class="flex flex-wrap w-11/12 bg-white mx-auto shadow-xl">
             <div class="w-full lg:w-2/3 p-12">
-                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">Business Insurance</h6>
-                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">Insuring your business property, auto, and liability.</h3>
-                <a href="/products/business/business-liability/" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-                    <span class="font-calibre-bold text-base text-white brown-button-text">View your options</span>
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.slider.third_slide.subtitle }}</h6>
+                <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C pb-8 leading-tight">{{ .Page.Params.slider.third_slide.title }}</h3>
+                <a href="{{ .Page.Params.slider.third_slide.button_link }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+                    <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.slider.third_slide.button_text }}</span>
                 </a>
             </div>
             <div class="w-full lg:w-1/3 bg-cover bg-center services-img-3">
@@ -118,28 +122,118 @@
 
 <section class="flex flex-wrap max-w-8xl mx-auto pb-48 px-8 sm:px-20 lg:px-12 xl:px-48">
     <div class="w-full lg:w-1/2">
-        <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight pb-3">Insurance FAQs</h3>
-        <p class="font-calibre text-base md:text-2xl font-thin leading-snug pb-8 pr-12">Insurance doesn’t have to be confusing. We’re here to help make life more enjoyable knowing that we have your trust, insured.</p>
-        <a href="/insurance-faqs/" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-            <span class="font-calibre-bold text-base text-white brown-button-text">See all FAQs</span>
+        <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight pb-3">{{ .Page.Params.faq_accordion_section.title }}</h3>
+        <p class="font-calibre text-base md:text-2xl font-thin leading-snug pb-8 pr-12">{{ .Page.Params.faq_accordion_section.text }}</p>
+        <a href="{{ .Page.Params.faq_accordion_section.button_link }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.faq_accordion_section.button_text }}</span>
         </a>
     </div>
     <div class="w-full lg:w-1/2 pt-20 lg:pt-0">
-        {{ partial "scripts/accordian.html" (dict "name" "homepage" ) }}
+        <a id="personal-faq-home" class="accordion-item-homepage">
+            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+                <div class="z-min1">
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.faq_accordion_section.first_question.subtitle }}</h6>
+                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">{{ .Page.Params.faq_accordion_section.first_question.title }}</h3>
+                </div>
+            </div>
+            <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+                {{ .Page.Params.faq_accordion_section.first_question.text }}
+            </div>
+            <div class="pt-6"></div>
+          </a>
+          
+          <a id="business-faq-home" class="accordion-item-homepage">
+            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+                <div class="z-min1">
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.faq_accordion_section.second_question.subtitle }}</h6>
+                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">{{ .Page.Params.faq_accordion_section.second_question.title }}</h3>
+                </div>
+            </div>
+            <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+                {{ .Page.Params.faq_accordion_section.second_question.text }}
+            </div>
+            <div class="pt-6"></div>
+          </a>
+          
+          <a id="life-faq-home" class="accordion-item-homepage">
+            <div class="flex justify-between hover:cursor-pointer accordion-title-row">
+                <div class="z-min1">
+                <h6 class="font-calibre-bold text-2xs md:text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.faq_accordion_section.third_question.subtitle }}</h6>
+                <h3 class="font-canela text-2xl text-color-11594C leading-tight pb-2">{{ .Page.Params.faq_accordion_section.third_question.title }}</h3>
+                </div>
+            </div>
+            <div id="accodion-styling" class="hidden font-calibre text-lg leading-tight accodion-styling accordion-content-homepage">
+                {{ .Page.Params.faq_accordion_section.third_question.text }}
+                {{ if .Page.Params.faq_accordion_section.third_question.list_items }}
+                  <ul class="pt-5">
+                    {{ range .Page.Params.faq_accordion_section.third_question.list_items }}
+                    <li>{{ . }}</li>
+                    {{ end }}
+                  </ul>
+                {{ else }}{{ end }}
+                {{ if .Page.Params.faq_accordion_section.third_question.extra_text }}
+                  <i>{{ .Page.Params.faq_accordion_section.third_question.extra_text }}</i>
+                {{ else }}{{ end }}
+            </div>
+            <div class="pt-6"></div>
+          </a>
+          
+          <script>
+          function addClass(el, klass_homepage) {
+            el.classList.add(klass_homepage);
+          }
+          
+          function removeClass(el, klass_homepage) {
+            el.classList.remove(klass_homepage);
+          }
+          
+          const accordionItemshomepage = document.querySelectorAll('.accordion-item-homepage');
+          const accordionContentPaneshomepage = document.querySelectorAll('.accordion-content-homepage');
+          
+          // Show first by default
+          accordionItemshomepage[0].querySelector('.accordion-content-homepage').classList.remove('hidden');
+          
+          // Hide each besides the targeted accordion on click
+          accordionItemshomepage.forEach(function(accordion) {
+            // Clicked accordeions clickable target
+            const accordionTitleRow = accordion.firstElementChild;
+          
+            accordionTitleRow.addEventListener('click', toggleAccordion);
+            // console.log(accordion.firstElementChild);
+          });
+          
+          function toggleAccordion(e) {
+            accordionContentPaneshomepage.forEach(function(content) {
+              if (content.previousElementSibling === e.target) {
+                removeClass(content, 'hidden');
+                addClass(content.parentElement, 'active');
+              } else {
+                removeClass(content.parentElement, 'active');
+                addClass(content, 'hidden');
+              }
+            });
+          }
+          </script>
     </div>
 
 </section>
+
+<style>
+.about-us-image {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.before_footer_section.image }}");
+}
+</style>
 
 <section id="about-us-section" class="flex flex-wrap items-center max-w-8xl mx-auto pb-48 px-8 lg:px-20">
     <div class="w-full lg:w-7/12 bg-contain xxl:bg-cover bg-center bg-no-repeat xxl:shadow-lg about-us-image">
         <div class="py-24 sm:py-56 lg:py-80"></div>
     </div>
     <div class="w-full lg:w-5/12 pt-5 px-0 lg:px-16">
-        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">YOUR TRUSTED ADVISOR</h6>
-        <h1 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight pb-3">We have your trust, insured.</h1>
-        <p class="font-calibre text-base md:text-lg font-thin leading-snug pb-8">Lee, Hill & Johnston Insurors has been doing business in Statesboro, Georgia since 1963. We are proud to provide insurance and financial solutions to more than 6,000 individuals and businesses in our area. We are committed to building a solid relationship with customers through practical solutions and excellent service.</p>
-        <a href="/about-the-company/" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
-            <span class="font-calibre-bold text-base text-white brown-button-text">Read more</span>
+        <h6 class="font-calibre-bold text-xs text-color-AC8042 tracking-widest2xl pb-2 uppercase">{{ .Page.Params.before_footer_section.subtitle }}</h6>
+        <h2 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight pb-3">{{ .Page.Params.before_footer_section.title }}</h2>
+        <p class="font-calibre text-base md:text-lg font-thin leading-snug pb-8">{{ .Page.Params.before_footer_section.text }}</p>
+        <a href="{{ .Page.Params.before_footer_section.button_link }}" class="py-3 px-8 rounded-lg focus:shadow-lg brown-button">
+            <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.before_footer_section.button_text }}</span>
         </a>
     </div>
 </section>
