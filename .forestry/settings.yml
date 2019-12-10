@@ -17,6 +17,7 @@ sections:
   label: Inner Pages
   create: all
   match: "**/*"
+  exclude: our-team.md
 - type: directory
   path: content/companies
   label: Companies
