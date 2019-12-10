@@ -8,20 +8,20 @@ fields:
   fields:
   - type: file
     name: footer_logo
-    label: footer_logo
+    label: footer logo
   - type: file
     name: logo
     label: logo
   - type: file
     name: mobile_logo
-    label: mobile_logo
+    label: mobile logo
 - type: field_group
   name: contact_numbers
-  label: contact_numbers
   fields:
   - type: text
     name: phone
     label: phone
+  label: contact numbers
 - type: field_group
   name: params
   label: params
@@ -40,6 +40,7 @@ fields:
   - type: textarea
     name: description
     label: description
+    description: This is the site's meta description.
 - type: field_group
   name: social
   label: social
@@ -56,7 +57,7 @@ fields:
   fields:
   - type: text
     name: google_analytics
-    label: google_analytics
+    label: google analytics
 - type: field_group
   name: collage
   label: collage
@@ -75,7 +76,7 @@ fields:
     label: image
 - type: field_group
   name: team_section
-  label: team_section
+  label: team section
   fields:
   - type: text
     name: title
