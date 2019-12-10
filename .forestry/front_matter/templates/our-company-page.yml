@@ -1,0 +1,31 @@
+---
+label: Our Company (page)
+hide_body: true
+fields:
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: type
+  label: type
+- type: text
+  name: layout
+  label: layout
+- type: text
+  name: url
+  label: url
+- type: text
+  name: title
+  label: title
+- type: text
+  name: page_status
+  label: page_status
+- type: file
+  name: publish_image
+  label: publish_image
+- type: textarea
+  name: meta_description
+  label: meta_description
+- type: file
+  name: company_group_image
+  label: company_group_image
