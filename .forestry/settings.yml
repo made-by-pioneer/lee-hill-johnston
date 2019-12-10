@@ -17,7 +17,7 @@ sections:
   label: Inner Pages
   create: all
   match: "**/*"
-  exclude: "('team.md', 'thank-you.md')"
+  exclude: glob('team.md', 'thank-you.md')
 - type: directory
   path: content/companies
   label: Companies
