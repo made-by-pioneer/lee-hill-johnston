@@ -12,8 +12,14 @@
 
 {{ partial "globals/inner-title.html" . }}
 
+<style>
+.company-group-image {
+    background-image: url("{{ .Site.Params.tracking.cloudinary_url }}/w_auto,dpr_auto,c_fill,g_auto,f_auto{{ .Page.Params.company_group_image }}");
+}
+</style>
+
 <section class="flex flex-wrap pb-20">
-    <div class="w-full md:w-2/3 bg-contain bg-center bg-no-repeat mx-auto about-us-image">
+    <div class="w-full md:w-2/3 bg-contain bg-center bg-no-repeat mx-auto company-group-image">
         <div class="py-32 sm:py-56"></div>
     </div>
 </section>

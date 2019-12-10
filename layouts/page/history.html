@@ -33,16 +33,11 @@
 }
 </style>
 
-<section class="flex flex-wrap max-w-8xl mx-auto pt-16 pb-16">
-    <div class="w-5/6 lg:w-1/2 mx-auto text-center">
-        <h1 class="font-canela text-3xl md:text-5xl text-color-11594C leading-tight pb-3">Our History</h1>
-        <p class="font-calibre text-base md:text-2xl text-color-262626">Since 1963, we’ve been insuring the trust of people in Statesboro, Bulloch county, and the surrounding Southeast.</p>
-    </div>
-</section>
+{{ partial "globals/inner-title.html" . }}
 
 <section class="flex flex-wrap max-w-8xl mx-auto pb-20">
     <div class="w-full md:w-2/3 lg:w-1/2 mx-auto history-video-box">
-        <iframe class="w-full history-video" src="https://www.youtube.com/embed/t5yuV1zU4wE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe class="w-full history-video" src="{{ .Page.Params.video }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </section>
 
@@ -52,8 +47,8 @@
             <i class="absolute top-0 right-0 text-4xl text-color-AA803F time-line-circle far fa-circle"></i>
         </div>
         <div class="w-11/12 md:w-1/2 -mt-10 pl-10">
-            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">1963</h3>
-            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">The agency was founded by Joe P. Johnston</p>
+            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">{{ .Page.Params.timeline.first_entry.year }}</h3>
+            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">{{ .Page.Params.timeline.first_entry.event }}</p>
         </div>
     </div>
     <div class="flex md:flex-row-reverse w-5/6 md:w-4/5 lg:w-2/3 mx-auto pb-8">
@@ -62,8 +57,8 @@
             <i class="hidden md:block absolute top-0 left-0 text-4xl text-color-AA803F time-line-circle-opposite far fa-circle"></i>
         </div>
         <div class="w-11/12 md:w-1/2 -mt-10 pl-8 md:pl-10">
-            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">1985</h3>
-            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">Pratt Hill purchased Hill & Olliff Insurance and merged with Johnston Insurance.</p>
+            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">{{ .Page.Params.timeline.second_entry.year }}</h3>
+            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">{{ .Page.Params.timeline.second_entry.event }}</p>
         </div>
     </div>
     <div class="flex w-5/6 md:w-4/5 lg:w-2/3 mx-auto pb-8">
@@ -71,8 +66,8 @@
             <i class="absolute top-0 right-0 text-4xl text-color-AA803F time-line-circle far fa-circle"></i>
         </div>
         <div class="w-11/12 md:w-1/2 -mt-10 pl-10">
-            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">1986</h3>
-            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">Pratt Hill and John Lee purchased the agency to form, Lee, Hill and Johnston Insurors.</p>
+            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">{{ .Page.Params.timeline.third_entry.year }}</h3>
+            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">{{ .Page.Params.timeline.third_entry.event }}</p>
         </div>
     </div>
     <div class="flex md:flex-row-reverse w-5/6 md:w-4/5 lg:w-2/3 mx-auto pb-8">
@@ -81,8 +76,8 @@
             <i class="hidden md:block absolute top-0 left-0 text-4xl text-color-AA803F time-line-circle-opposite far fa-circle"></i>
         </div>
         <div class="w-11/12 md:w-1/2 -mt-10 pl-8 md:pl-10">
-            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">1991</h3>
-            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">Lee Hill and Johnston moves into their Savannah Ave. location.</p>
+            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">{{ .Page.Params.timeline.fourth_entry.year }}</h3>
+            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">{{ .Page.Params.timeline.fourth_entry.event }}</p>
         </div>
     </div>
     <div class="flex w-5/6 md:w-4/5 lg:w-2/3 mx-auto pb-8">
@@ -90,8 +85,8 @@
             <i class="absolute top-0 right-0 text-4xl text-color-AA803F time-line-circle far fa-circle"></i>
         </div>
         <div class="w-11/12 md:w-1/2 -mt-10 pl-10">
-            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">2016</h3>
-            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">Mitchell Hill and Russ Taulbee become partners.</p>
+            <h3 class="font-canela text-3xl md:text-4.5xl text-color-11594C leading-tight">{{ .Page.Params.timeline.fifth_entry.year }}</h3>
+            <p class="font-calibre text-base sm:text-xl md:text-2xl font-thin leading-snug pb-8 pr-10 md:pr-12">{{ .Page.Params.timeline.fifth_entry.event }}</p>
         </div>
     </div>
 </section>
