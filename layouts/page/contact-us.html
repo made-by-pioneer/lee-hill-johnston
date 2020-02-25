@@ -6,14 +6,10 @@
 {{ partial "globals/inner-title.html" . }}
 
 <form class="flex flex-wrap max-w-8xl mx-auto pt-10 pb-24 px-5 lg:px-32 font-calibre-bold" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="contact-form" method="POST" netlify>
-    <input type="hidden" name="subject" value="New Submission from Website" />
+    <input type="hidden" name="subject" value="Request from Website" />
     <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
-        <label class="w-full text-xl">First Name</label>
-        <input name="first-name" type="text" placeholder="Your first name here..." class="w-full text-base p-2 rounded-lg" required>
-    </div>
-    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
-        <label class="w-full text-xl">Last Name</label>
-        <input name="last-name" type="text" placeholder="Your last name here..." class="w-full text-base p-2 rounded-lg" required>
+        <label class="w-full text-xl">Full Name</label>
+        <input name="name" type="text" placeholder="Your name here..." class="w-full text-base p-2 rounded-lg" required>
     </div>
     <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
         <label class="w-full text-xl">Email</label>
@@ -22,6 +18,14 @@
     <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
         <label class="w-full text-xl">Phone Number</label>
         <input name="phone" type="text" placeholder="555-555-5555" class="w-full text-base p-2 rounded-lg" required>
+    </div>
+    <div class="flex flex-wrap w-full sm:w-1/2 pb-6 px-5">
+        <label class="w-full text-xl">What can we help you with?</label>
+        <select id="" class="w-full text-base p-2 rounded-lg select-css-quote" required>
+            <option value="" disabled selected>Select an option...</option>
+            <option value="General Question">General Question</option>
+            <option value="I need an insurance quote">I need an insurance quote</option>
+        </select>
     </div>
     <input type="text" name="field-for-coolguys" style="display:none" />
     <div class="flex flex-wrap w-full px-5">

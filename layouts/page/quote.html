@@ -5,15 +5,15 @@
 
 {{ partial "globals/inner-title.html" . }}
 
-<form class="flex flex-wrap max-w-8xl mx-auto pt-10 pb-24 px-5 lg:px-32 font-calibre-bold" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="contact-form" method="POST" netlify>
-    <input type="hidden" name="subject" value="New Submission from Website" />
+<form class="flex flex-wrap max-w-8xl mx-auto pt-10 pb-24 px-5 lg:px-32 font-calibre-bold" action="/thank-you/" netlify-honeypot="field-for-coolguys" name="quote-form" method="POST" netlify>
+    <input type="hidden" name="subject" value="New Quote Request from Website" />
     <div class="flex flex-wrap w-full pb-6 px-5">
         <label class="w-full text-xl">What kind of quote are you looking for?</label>
         <select id="" class="w-full text-base p-2 rounded-lg select-css-quote">
             <option value="" disabled selected>Select an option...</option>
             {{ $pageTitle := .Title }}
             {{ range (where .Site.Pages "Type" "products") }}
-            {{ if not (eq .Title $pageTitle ) }}
+            {{ if not (eq .Params.robotsdisallow true ) }}
             <option value="{{ .Title }}">{{ .Title }}</option>
             {{ else }}{{ end }}
             {{ end }}
