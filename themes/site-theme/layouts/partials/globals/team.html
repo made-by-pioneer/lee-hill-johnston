@@ -19,6 +19,16 @@
             </div>
             <h6 class="font-canela text-3xl text-color-11594C text-center leading-tight pt-2">{{ .Title }}</h6>
             <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+            {{ if .Params.email }}
+            <div class="w-full font-calibre text-xs text-center tracking-widest2xl">
+                <a href="mailto:{{ .Params.email }}" class="">{{ .Params.email }}</a>
+            </div>
+            {{ else }}{{ end }}
+            {{ if .Params.telephone }}
+            <div class="w-full font-calibre text-lg md:text-xs text-center tracking-widest2xl py-3 md:py-0 px-8">
+                <a href="tel:{{ .Params.telephone }}" class="py-3 md:py-0 px-8">{{ .Params.telephone }}</a>
+            </div>
+            {{ else }}{{ end }}
         </div>
         {{ end }}
         {{ range where .Site.Pages ".Params.team_group" "Agents" }}
@@ -33,6 +43,16 @@
             </div>
             <h6 class="font-canela text-3xl text-color-11594C text-center leading-tight pt-2">{{ .Title }}</h6>
             <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+            {{ if .Params.email }}
+            <div class="w-full font-calibre text-xs text-center tracking-widest2xl">
+                <a href="mailto:{{ .Params.email }}" class="">{{ .Params.email }}</a>
+            </div>
+            {{ else }}{{ end }}
+            {{ if .Params.telephone }}
+            <div class="w-full font-calibre text-lg md:text-xs text-center tracking-widest2xl py-3 md:py-0 px-8">
+                <a href="tel:{{ .Params.telephone }}" class="py-3 md:py-0 px-8">{{ .Params.telephone }}</a>
+            </div>
+            {{ else }}{{ end }}
         </div>
         {{ end }}
         {{ range where .Site.Pages ".Params.team_group" "Commercial Lines Account Managers" }}
@@ -47,6 +67,16 @@
             </div>
             <h6 class="font-canela text-3xl text-color-11594C text-center leading-none pt-2">{{ .Title }}</h6>
             <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+            {{ if .Params.email }}
+            <div class="w-full font-calibre text-xs text-center tracking-widest2xl">
+                <a href="mailto:{{ .Params.email }}" class="">{{ .Params.email }}</a>
+            </div>
+            {{ else }}{{ end }}
+            {{ if .Params.telephone }}
+            <div class="w-full font-calibre text-lg md:text-xs text-center tracking-widest2xl py-3 md:py-0 px-8">
+                <a href="tel:{{ .Params.telephone }}" class="py-3 md:py-0 px-8">{{ .Params.telephone }}</a>
+            </div>
+            {{ else }}{{ end }}
         </div>
         {{ end }}
         {{ range where .Site.Pages ".Params.team_group" "Personal Lines Account Managers" }}
@@ -61,6 +91,16 @@
             </div>
             <h6 class="font-canela text-3xl text-color-11594C text-center leading-tight pt-2">{{ .Title }}</h6>
             <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+            {{ if .Params.email }}
+            <div class="w-full font-calibre text-xs text-center tracking-widest2xl">
+                <a href="mailto:{{ .Params.email }}" class="">{{ .Params.email }}</a>
+            </div>
+            {{ else }}{{ end }}
+            {{ if .Params.telephone }}
+            <div class="w-full font-calibre text-lg md:text-xs text-center tracking-widest2xl py-3 md:py-0 px-8">
+                <a href="tel:{{ .Params.telephone }}" class="py-3 md:py-0 px-8">{{ .Params.telephone }}</a>
+            </div>
+            {{ else }}{{ end }}
         </div>
         {{ end }}
         {{ range where .Site.Pages ".Params.team_group" "Admin" }}
@@ -75,6 +115,16 @@
             </div>
             <h6 class="font-canela text-3xl text-color-11594C text-center leading-tight pt-2">{{ .Title }}</h6>
             <h6 class="font-calibre-bold text-2xs text-color-AC8042 text-center tracking-widest2xl pb-2 uppercase">{{ .Params.team_title }}</h6>
+            {{ if .Params.email }}
+            <div class="w-full font-calibre text-xs text-center tracking-widest2xl">
+                <a href="mailto:{{ .Params.email }}" class="">{{ .Params.email }}</a>
+            </div>
+            {{ else }}{{ end }}
+            {{ if .Params.telephone }}
+            <div class="w-full font-calibre text-lg md:text-xs text-center tracking-widest2xl py-3 md:py-0 px-8">
+                <a href="tel:{{ .Params.telephone }}" class="py-3 md:py-0 px-8">{{ .Params.telephone }}</a>
+            </div>
+            {{ else }}{{ end }}
         </div>
         {{ end }}
     </div>

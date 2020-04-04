@@ -5,5 +5,6 @@ title = "Win Lee"
 team_img = "/v1574219417/Lee%2C%20Hill%20and%20Johnston/LHJ.WinLee_qnugdj.jpg"
 team_title = "Insurance Advisor"
 team_group = "Agents"
+email = "win@lhjins.com"
 weight = 3
 +++

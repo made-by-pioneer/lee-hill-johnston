@@ -1,4 +1,5 @@
 import styles from './../css/main.css';
+import MicroModal from 'micromodal';
 import { tns } from "tiny-slider/src/tiny-slider";
 
 // mobile menu toggle
@@ -20,6 +21,12 @@ closemenu.onclick = function() {
   mobilemenu.classList.toggle('overflow-scroll');
   body.classList.toggle('overflow-hidden');
 }
+
+// END
+
+// init micromodal's js
+
+MicroModal.init();
 
 // END
 

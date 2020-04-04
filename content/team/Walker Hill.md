@@ -5,5 +5,6 @@ title = "Walker Hill"
 team_img = "/v1574219417/Lee%2C%20Hill%20and%20Johnston/LHJ.WalkerHill_mubmjc.jpg"
 team_title = "Insurance Advisor"
 team_group = "Agents"
+email = "Walker@lhjins.com"
 weight = 2
 +++
