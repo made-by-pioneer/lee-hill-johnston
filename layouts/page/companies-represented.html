@@ -1,9 +1,7 @@
 {{ define "main" }}
 
 <style>
-.company-list a:hover {
-  color: #666666;
-}
+
 </style>
 
 <section id="clients-represented" class="flex flex-wrap items-start max-w-8xl mx-auto pt-16 pb-16 lg:px-20">
@@ -14,13 +12,20 @@
             <span class="font-calibre-bold text-base text-white brown-button-text">{{ .Page.Params.top_section.button_text }}</span>
         </a>
     </div>
-    <div class="w-5/6 lg:w-2/3 mx-auto lg:px-12">
+    <div class="flex flex-wrap w-5/6 lg:w-2/3 text-center mx-auto lg:px-12">
         <p class="font-calibre text-base md:text-2xl text-color-262626 pb-8">{{ .Page.Params.top_section.text }}</p>
-        <ul class="list-disc list-inside font-calibre text-base md:text-2xl text-color-262626 pb-8 company-list">
+        <div class="flex flex-wrap w-full font-calibre text-base md:text-2xl text-color-262626 pb-8 company-list">
             {{ range (where .Site.Pages "Type" "companies") }}
-            <li><a href="{{ .Params.company_link }}" target="_blank">{{ .Title }}</span></li>
+            <a href="{{ .Params.company_link }}" target="_blank" class="w-full xl:w-1/2 border-2 border-color-E4E2DD hover:border-color-AA803F p-4">
+                {{ if .Params.logo }}
+                <img src="{{ .Site.Params.tracking.cloudinary_url }}{{ .Params.logo }}" class="w-32 mx-auto" alt="We represent {{ .Title }}">
+                {{ else }}
+                <div class="py-8"></div>
+                {{ end }}
+                <div class="leading-none">{{ .Title }}</div>
+            </a>
             {{ end }}
-        </ul>
+        </div>
     </div>
 </section>
 
