@@ -337,22 +337,6 @@ nav a:hover {
 {{ end }}
 
 <section id="header" class="header-container">
-  <div class="flex flex-wrap items-center relative bg-color-AA803F topbar">
-    <div class="flex flex-wrap items-center w-5/6 max-w-7xl mx-auto py-3">
-      <a href="tel:{{ .Site.Data.global_data.contact_numbers.phone }}" class="w-full md:w-1/3">
-        <h6 class="font-calibre text-base text-white text-center md:text-left">Call us today {{ .Site.Data.global_data.contact_numbers.phone }}</h6>
-      </a>
-      <div class="lg:flex items-center text-center mx-auto">
-        <h6 class="w-auto font-calibre text-base text-white pb-2 lg:pb-0 pr-2">We are working remotely.</h6>
-        <a data-micromodal-trigger="working-remotely" class="w-auto py-2 md:py-1 px-5 md:px-3 rounded-lg focus:shadow-lg green-button">
-          <span class="font-calibre-bold text-base text-white brown-button-text">Learn More</span>
-        </a>
-      </div>
-      <a href="/quote/" class="hidden md:block w-full md:w-1/3">
-        <h6 class="font-calibre text-base text-white text-right">Get an Online Quote Today!</h6>
-      </a>
-    </div>
-  </div>
   <div class="flex flex-wrap items-center max-w-8xl mx-auto py-8 px-6 md:px-20 z-50 select-none header-box">
     <a id="logo" class="w-1/2 md:w-1/3 lg:w-1/5 mr-auto z-50" href="/">
       {{ if eq .Title "Home" }}
