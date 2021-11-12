@@ -339,7 +339,7 @@ nav a:hover {
 <section id="header" class="header-container">
   <div class="flex flex-wrap items-center relative bg-color-AA803F topbar">
     {{ if .Site.Data.global_data.announcement.text }}
-      <a {{ if .Site.Data.global_data.announcement.on_site_link }}href='{{ .Site.Data.global_data.announcement.on_site_link }}'{{ else if .Site.Data.global_data.announcement.off_site_link }}href='{{ .Site.Data.global_data.announcement.off_site_link }}' target='_blank' {{ else if .Site.Data.global_data.announcement.file_link }}href='{{ .Site.Data.global_data.announcement.file_link }}' target='_blank' {{ else }}{{ end }} class="flex flex-wrap items-center justify-between w-5/6 max-w-7xl mx-auto py-3">
+      <a {{ if .Site.Data.global_data.announcement.on_site_link }}href='{{ .Site.Data.global_data.announcement.on_site_link }}'{{ else if .Site.Data.global_data.announcement.off_site_link }}href='{{ .Site.Data.global_data.announcement.off_site_link }}' target='_blank' {{ else if .Site.Data.global_data.announcement.file_link }}href='{{ .Site.Params.tracking.cloudinary_url }}{{ .Site.Data.global_data.announcement.file_link }}' target='_blank' {{ else }}{{ end }} class="flex flex-wrap items-center justify-between w-5/6 max-w-7xl mx-auto py-3">
         <h6 class="font-calibre text-base text-white text-center md:text-left">{{ .Site.Data.global_data.announcement.text | safeHTML }}</h6>
       </a>
     {{ else }}
