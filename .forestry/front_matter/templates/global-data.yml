@@ -84,5 +84,21 @@ fields:
   - type: textarea
     name: text
     label: text
+- type: field_group
+  name: announcement
+  label: Announcement
+  fields:
+  - type: textarea
+    name: text
+    label: Text
+  - type: text
+    name: on_site_link
+    label: On Site Link
+  - type: text
+    name: off_site_link
+    label: Off Site Link
+  - type: file
+    name: file_link
+    label: File Link
 pages:
 - themes/site-theme/data/global_data.toml
