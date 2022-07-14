@@ -1,5 +1,5 @@
 +++
-company_group_image = "/v1657831849/Lee%2C%20Hill%20and%20Johnston/Pic_of_guys_sgcho3.jpg"
+company_group_image = "/v1657832176/Lee%2C%20Hill%20and%20Johnston/Pic_of_guys_shlwgf.jpg"
 date = 2019-04-24T05:00:00Z
 layout = "company"
 meta_description = "For nearly 60 years, we’ve been insuring the trust of people in Statesboro, Bulloch county, and the surrounding Southeast. We believe building lasting relationships with our customers insures more than just their property or liability. It insures your trust, as well. "
