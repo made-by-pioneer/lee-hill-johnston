@@ -8,6 +8,9 @@ title = "Our History"
 type = "page"
 url = "/our-history/"
 video = "https://www.youtube.com/embed/t5yuV1zU4wE"
+[timeline.sixth_entry]
+event = "Mitchell Hill, Russ Taulbee, Walker Hill and Win Lee purchased the agency from Pratt Hill & John Lee."
+year = "2022"
 [timeline.fifth_entry]
 event = "Mitchell Hill and Russ Taulbee become partners."
 year = "2016"
