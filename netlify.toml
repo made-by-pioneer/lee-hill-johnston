@@ -15,3 +15,4 @@ HUGO_VERSION = "0.55.0"
   from = "/quote"
   to = "/request-a-quote"
   status = 301
+  force = true
